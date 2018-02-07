@@ -1,0 +1,35 @@
+.logo {
+	height: 64px;
+	width: 64px;
+}
+
+.nav {
+	font-size: 18px;
+	padding-left: 25px;
+}
+
+.nav a {
+	margin-right: 25px;
+	text-decoration: none;
+	color: var(--text-color);
+	transition: color .2s;
+}
+
+.nav a:hover {
+	color: var(--highlight);
+}
+
+.nav>a.active {
+	color: var(--highlight);
+}
+
+.user-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.user-nav > .item {
+	margin-left: 25px;
+}

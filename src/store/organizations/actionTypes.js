@@ -1,0 +1,1 @@
+export const UPDATE_CURRENT_ORG = 'organizations.UPDATE_CURRENT_ORG';
