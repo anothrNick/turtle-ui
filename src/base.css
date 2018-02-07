@@ -70,6 +70,12 @@ body {
     font-size: 14px;
 }
 
+pre {
+	background-color: #f7f7f7;
+	border: 2px solid #EAEAEA;
+	padding: 15px;
+}
+
 @media (min-width: 768px) { 
 	.container {
 		width: 100%;
