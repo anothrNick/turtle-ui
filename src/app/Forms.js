@@ -16,14 +16,24 @@ class Forms extends Component {
 				<div className="grid grid-3">
 			    	<Input placeholder="a text input" />
 			    	<Select placeholder="a text input" options={options}/>
-			    	<TextArea placeholder="a text area" />
 
+			    	<div className="col-2">
+			    		<div className="grid grid-1">
+			    			<TextArea placeholder="a text area" />
+			    		</div>
+			    	</div>
+				</div>
 
+				<div className="grid grid-3 margin-top-more">
 			    	<Input placeholder="a text input" label="Label" value="test value"/>
 			    	<Select placeholder="a text input" label="Label" options={options} value="1"/>
-			    	<TextArea placeholder="a text area" label="Label" value="test value"/>
-			    	<span></span>
+			    	<div className="col-2">
+			    		<div className="grid grid-1">
+			    			<TextArea placeholder="a text area" label="Label" value="test value"/>
+			    		</div>
+			    	</div>
 				</div>
+
 
 				<br/>
 				<h2>Message</h2>

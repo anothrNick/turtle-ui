@@ -1,0 +1,85 @@
+.card {
+	border: 2px solid var(--card-border-color);
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-content > h1, 
+.card-content > h2, 
+.card-content > h3, 
+.card-content > h4, 
+.card-content > h5, 
+.card-content > h6 {
+	margin-top: 0px;
+}
+
+.card-content {
+	flex-grow: 1;
+	padding: 15px;
+}
+
+.card.no-content-padding > .card-content {
+	padding: 0px;
+}
+
+.card-footer {
+	background-color: var(--card-border-color);
+	padding: 15px;
+}
+
+.card.success {
+	border-color: var(--success);
+	background-color: #FFF;
+}
+
+.card.information {
+	border-color: var(--information);
+	background-color: #FFF;
+}
+
+.card.danger {
+	border-color: var(--danger);
+	background-color: #FFF;
+}
+
+
+.card.alert {
+	background-color: var(--card-border-color);
+}
+.card.alert.success {
+	border-color: var(--success);
+	background-color: var(--success);
+	color: #FFF;
+}
+
+.card.alert.information {
+	border-color: var(--information);
+	background-color: var(--information);
+	color: #FFF;
+}
+
+.card.alert.danger {
+	border-color: var(--danger);
+	background-color: var(--danger);
+	color: #FFF;
+}
+
+.card.success > .card-footer {
+	background-color: var(--success);
+	color: #FFF;
+}
+
+.card.information > .card-footer {
+	background-color: var(--information);
+	color: #FFF;
+}
+
+.card.danger > .card-footer {
+	background-color: var(--danger);
+	color: #FFF;
+}
+
+.card.footer-plain > .card-footer {
+	background-color: #FFF;
+}

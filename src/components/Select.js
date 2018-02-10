@@ -13,8 +13,7 @@ class Select extends Component {
 		  message: props.message ? props.message : "",
 		  state: props.state ? props.state : "",
 		  classes: props.classes ? props.classes : "",
-		  options: props.options ? props.options : [],
-		  value: props.value ? props.value : -1
+		  options: props.options ? props.options : []
 		}
 
 	}
@@ -29,7 +28,7 @@ class Select extends Component {
         			<option value="" disabled selected hidden>{this.state.placeholder}</option>
         			{this.state.options.map(function(option) {
         				return (
-        					<option value={option.value} selected={this.state.value == option.value}>{option.text}</option>
+        					<option value={option.value} selected={this.props.value == option.value}>{option.text}</option>
         				)
         			}, this)}
 		    	</select>
