@@ -8,6 +8,8 @@
     align-items: initial;
     font: 16px 'Roboto';
     font-weight: normal;
+	display: flex;
+    justify-content: center;
 }
 
 .button.success {
@@ -55,5 +57,10 @@
 
 .button.danger.plain {
 	color: var(--danger);
+	background-color: #FFF;
+}
+
+.button.text {
+	border: none;
 	background-color: #FFF;
 }

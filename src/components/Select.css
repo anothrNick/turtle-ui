@@ -1,0 +1,28 @@
+.select {
+	width: 100%;
+	margin: 5px 0px;
+	border: 2px solid var(--border-color);
+	border-radius: 2px;
+	padding: 9.5px;
+	font-size: 16px;
+	background-color: #FFF;
+	font-family: inherit;
+	color: var(--text-color);
+
+	/*-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url(...);*/
+}
+
+.select.success {
+	border-color: var(--success);
+}
+
+.select.information {
+	border-color: var(--information);
+}
+
+.select.danger {
+	border-color: var(--danger);
+}
