@@ -13,13 +13,15 @@ class Modal extends Component {
 	}
 
 	render() {
-		if (this.props.isOpen === false)
-        	return null;
+		// if (this.props.isOpen === false)
+  		//       	return null;
 
-		const classes = ["modal center show", this.state.classes].join(" ");
+  		var show = this.props.isOpen ? "show" : "";
+		const modalClasses = ["modal center", this.state.classes, show].join(" ");
+		const backdropClasses = ["backdrop", show].join(" ");
 		return (
 			<div>
-				<div className={classes}>
+				<div className={modalClasses}>
 					<div className="grid grid-3">
 						<div className="col-3-2">
 							<div className="grid grid-1">
@@ -29,7 +31,7 @@ class Modal extends Component {
 					</div>
 				</div>
 
-				<div className="backdrop"></div>
+				<div className={backdropClasses} onClick={this.close}></div>
 			</div>
 		  );
 	}

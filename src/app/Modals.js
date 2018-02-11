@@ -9,16 +9,25 @@ class Modals extends Component {
 		super(props);
 
 		this.state = {
-			openModal: false
+			openModalOne: false,
+			openModalTwo: false
 		}
 	}
 
-	open = () => {
-		this.setState({openModal: true});
+	openOne = () => {
+		this.setState({openModalOne: true});
 	}
 
-	close = () => {
-		this.setState({openModal: false})
+	closeOne = () => {
+		this.setState({openModalOne: false})
+	}
+
+	openTwo = () => {
+		this.setState({openModalTwo: true});
+	}
+
+	closeTwo = () => {
+		this.setState({openModalTwo: false})
 	}
 
 	render() {
@@ -26,24 +35,39 @@ class Modals extends Component {
 			<div >
 				<h1>Modals</h1>
 
-				<Button type="information plain" classes="col-1" onClick={this.open}>Open Modal</Button>	
+				<div className="grid">
+					<Button type="information plain" classes="col-2" onClick={this.openOne}>Open Modal</Button>	
+					<Button type="information plain" classes="col-2" onClick={this.openTwo}>Open Modal</Button>	
+				</div>
 
 				<Modal 
-					close={this.close}
-					isOpen={this.state.openModal}>
+					close={this.closeOne}
+					isOpen={this.state.openModalOne}>
 					<Card 
 						classes="footer-plain"
 						footer={
 							<div className="grid grid-2">
 						    	<div className="col-2 col-right">
-									<Button type="plain text" onClick={this.close}>Cancel</Button>	
-									<Button type="information plain" classes="margin-left" onClick={this.close}>Submit</Button>	
+									<Button type="plain text" onClick={this.closeOne}>Cancel</Button>	
+									<Button type="information plain" classes="margin-left" onClick={this.closeOne}>Submit</Button>	
 						    	</div>
 							</div>
 						}>
-						<h2>Card Header</h2>
-						<p>Example of a card with a header</p>
+						<h2> Header</h2>
+						<p>Example of a card used as the modal body</p>
 					</Card>
+				</Modal>
+
+				<Modal 
+					close={this.closeTwo}
+					isOpen={this.state.openModalTwo}>
+					<h2>Hello</h2>
+					<div className="grid grid-2">
+				    	<div className="col-2 col-right">
+							<Button type="plain text" onClick={this.closeTwo}>Close</Button>
+						</div>
+					</div>
+
 				</Modal>
 			</div>
 		  );
