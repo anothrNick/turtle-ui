@@ -22,16 +22,12 @@ class Modal extends Component {
 		return (
 			<div>
 				<div className={modalClasses}>
-					<div className="grid grid-3">
-						<div className="col-3-2">
-							<div className="grid grid-1">
-								{this.props.children}
-							</div>
-						</div>
-					</div>
+
+					{this.props.children}
+					
 				</div>
 
-				<div className={backdropClasses} onClick={this.close}></div>
+				<div className={backdropClasses} onClick={this.props.close}></div>
 			</div>
 		  );
 	}

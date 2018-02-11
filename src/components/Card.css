@@ -6,6 +6,10 @@
 	background-color: #FFF;
 }
 
+.modal .card {
+	border-width: 0px;
+}
+
 .card-content > h1, 
 .card-content > h2, 
 .card-content > h3, 
