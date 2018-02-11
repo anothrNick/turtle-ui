@@ -46,28 +46,28 @@ class Navs extends Component {
 
 				<br/>
 				<h2>Vertical Nav</h2>
-				<div className="grid grid-4">
+				<div className="grid grid-5">
 					<Nav 
 						classes="grid grid-1"
 						links={testLinks}
 					/>
-					<Card state="alert" classes="center col-3"><p className="text-muted">Content</p></Card>
+					<Card state="alert" classes="center col-4"><p className="text-muted">Content</p></Card>
 				</div>
 
 				<br/>
 				<h2>Vertical Nav - <small>align text right</small></h2>
-				<div className="grid grid-4">
+				<div className="grid grid-5">
 					<Nav 
 						classes="grid grid-1 align-right"
 						links={testLinks}
 					/>
-					<Card state="alert" classes="center col-3"><p className="text-muted">Content</p></Card>
+					<Card state="alert" classes="center col-4"><p className="text-muted">Content</p></Card>
 				</div>
 
 				<br/>
 				<h2>Vertical Nav - <small>right side</small></h2>
-				<div className="grid grid-4">
-					<Card state="alert" classes="center col-3"><p className="text-muted">Content</p></Card>
+				<div className="grid grid-5">
+					<Card state="alert" classes="center col-4"><p className="text-muted">Content</p></Card>
 					
 					<Nav 
 						classes="grid grid-1"
