@@ -18,15 +18,17 @@ class Table extends Component {
 		const classes = ["table",this.state.classes,this.state.state].join(" ");
 		return (
 			<table className={classes}>
-				<thead>
-					<tr>
-					{this.state.headers.map(function(header){
-						return (
-							<th>{header}</th>
-						)
-					})}
-					</tr>
-				</thead>
+				{this.state.headers.length > 0 &&
+					<thead>
+						<tr>
+						{this.state.headers.map(function(header){
+							return (
+								<th>{header}</th>
+							)
+						})}
+						</tr>
+					</thead>
+				}
 				<tbody>
 					{this.state.values.map(function(row){
 						return (

@@ -32,6 +32,12 @@ body {
   color: var(--text-color);
 }
 
+a {
+	text-decoration: none;
+	color: initial;
+}
+
+
 .container {
 	min-height: 100vh;
 	margin: 0 auto;
@@ -173,6 +179,16 @@ strong {
 	font-weight: 400;
 }
 
+.text-300 {
+	font-weight: 300;
+}
+.text-400 {
+	font-weight: 400;
+}
+.text-600 {
+	font-weight: 600;
+}
+
 .text-success {
 	color: var(--success);
 }
@@ -183,6 +199,21 @@ strong {
 
 .text-danger {
 	color: var(--danger);
+}
+
+.background-success {
+	background-color: var(--success);
+	color: #FFF;
+}
+
+.background-information {
+	background-color: var(--information);
+	color: #FFF;
+}
+
+.background-danger {
+	background-color: var(--danger);
+	color: #FFF;
 }
 
 /* UTILITY */

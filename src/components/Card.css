@@ -4,6 +4,16 @@
 	display: flex;
 	flex-direction: column;
 	background-color: #FFF;
+
+	transition: background-color .2s;
+}
+
+.card.hover:hover {
+	background-color: #fafafa;
+}
+
+.card.click:hover {
+	cursor: pointer;
 }
 
 .modal .card {

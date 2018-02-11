@@ -22,12 +22,16 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	text-align: left;
 	font-weight: 400;
 	padding: 8px 15px;
+	border-bottom: 2px solid var(--card-border-color);
 }
 
 .table>tbody>tr>td {
 	text-align: left;
 	padding: 15px;
-	border-top: 2px solid var(--card-border-color);
+	border-bottom: 2px solid var(--card-border-color);
+}
+.table>tbody>tr:last-child>td{
+	border-bottom: none;
 }
 
 .table.hover>tbody>tr:hover{
