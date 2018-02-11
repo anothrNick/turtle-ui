@@ -1,0 +1,36 @@
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    border-spacing: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.table {
+	width: 100%;
+	border: 2px solid var(--card-border-color);
+	border-radius: 2px;
+}
+
+.table>thead>tr {
+	background-color: #fafafa;
+}
+.table>thead>tr>th {
+	text-align: left;
+	font-weight: 400;
+	padding: 8px 15px;
+}
+
+.table>tbody>tr>td {
+	text-align: left;
+	padding: 15px;
+	border-top: 2px solid var(--card-border-color);
+}
+
+.table.hover>tbody>tr:hover{
+	cursor: pointer;
+	background-color: #fafafa;
+}
