@@ -20,18 +20,22 @@ class Card extends Component {
 		const textClass = ["text-", this.state.state].join("");
 
 		var card;
-		var cardContent = <div>
-							<div className="card-content">{this.props.children}</div>
-							{this.state.footer && 
-								<div className="card-footer">{this.state.footer}</div>					
-							}
-						  </div>
 
 		if (this.props.to) {
-			card = <NavLink to={this.props.to} className={classes}>{cardContent}</NavLink>
+			card = <NavLink to={this.props.to} className={classes}>
+						<div className="card-content">{this.props.children}</div>
+						{this.state.footer && 
+							<div className="card-footer">{this.state.footer}</div>					
+						}
+					</NavLink>
 		}
 		else {
-			card = <div className={classes}>{cardContent}</div>
+			card = <div className={classes}>
+						<div className="card-content">{this.props.children}</div>
+						{this.state.footer && 
+							<div className="card-footer">{this.state.footer}</div>					
+						}
+					</div>
 		}
 
 		return card;

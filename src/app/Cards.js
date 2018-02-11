@@ -108,7 +108,10 @@ class Cards extends Component {
 							<Card classes="success" state="alert">Success Background</Card>
 							<Card classes="information" state="alert">Information Background</Card>
 							<Card classes="danger" state="alert">Danger Background</Card>
-
+							
+							<Card classes="hover">Hover</Card>
+							<Card classes="hover click">Hover with pointer</Card>
+							<Card classes="hover" to="/cards">As a link</Card>
 						</div>
 					</div>
 				</div>

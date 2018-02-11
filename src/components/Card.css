@@ -80,21 +80,21 @@
 	color: #FFF;
 }
 
-.card.success > .card-footer {
+.card.success .card-footer {
 	background-color: var(--success);
 	color: #FFF;
 }
 
-.card.information > .card-footer {
+.card.information .card-footer {
 	background-color: var(--information);
 	color: #FFF;
 }
 
-.card.danger > .card-footer {
+.card.danger .card-footer {
 	background-color: var(--danger);
 	color: #FFF;
 }
 
-.card.footer-plain > .card-footer {
+.card.footer-plain .card-footer {
 	background-color: #FFF;
 }

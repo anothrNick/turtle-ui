@@ -34,7 +34,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: initial;
+	color: var(--text-color);
 }
 
 
@@ -43,7 +43,7 @@ a {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: 80px 1fr 30px;
+	grid-template-rows: 80px 1fr 50px;
 	grid-gap: 0px;
 	grid-template-areas:
 	    "header"
@@ -85,7 +85,9 @@ a {
 	grid-area: footer;
 	display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 14px;
+    height: 50px;
 }
 
 pre {
