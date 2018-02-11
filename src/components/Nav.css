@@ -1,0 +1,51 @@
+.nav {
+	padding-bottom: 2px;
+}
+
+.nav.underline {
+	border-bottom: 2px solid var(--card-border-color);
+}
+
+.nav.align-right a {
+	text-align: right;
+}
+
+.nav.align-center a {
+	text-align: center;
+}
+
+.nav a {
+	margin: 0px;
+	margin-right: 25px;
+	padding: 0px;
+	text-decoration: none;
+	color: var(--text-muted);
+	transition: color .2s, box-shadow .2s;
+    font-weight: 400;
+    font-size: 16px;
+	text-align: left;
+}
+.nav.link-underline a {
+	padding-bottom: 4px;
+}
+.nav.underline a {
+	margin-bottom: -4px;
+}
+.nav.pull-right a {
+	margin-right: 0px;
+	margin-left: 25px;
+}
+
+.nav a:hover {
+	color: var(--highlight);
+}
+.nav.link-underline a:hover {
+	box-shadow: inset 0px -2px 0px var(--highlight);
+}
+
+.nav>a.active {
+	color: var(--highlight);
+}
+.nav.link-underline a.active {
+	box-shadow: inset 0px -2px 0px var(--highlight);
+}

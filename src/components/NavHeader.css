@@ -3,25 +3,24 @@
 	width: 64px;
 }
 
-.nav {
-	font-size: 18px;
+.nav-header {
 	padding-left: 25px;
 }
 
-.nav a {
+.nav-header a {
 	margin-right: 25px;
 	text-decoration: none;
-	color: var(--text-color);
+	color: var(--text-muted);
 	transition: color .2s;
     font-weight: 400;
     font-size: 16px;
 }
 
-.nav a:hover {
+.nav-header a:hover {
 	color: var(--highlight);
 }
 
-.nav>a.active {
+.nav-header>a.active {
 	color: var(--highlight);
 }
 

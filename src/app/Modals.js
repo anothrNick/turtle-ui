@@ -36,8 +36,8 @@ class Modals extends Component {
 				<h1>Modals</h1>
 
 				<div className="grid">
-					<Button type="information plain" classes="col-2" onClick={this.openOne}>Open Modal</Button>	
-					<Button type="information plain" classes="col-2" onClick={this.openTwo}>Open Modal</Button>	
+					<Button type="success plain" classes="col-2" onClick={this.openOne}>Card Modal</Button>	
+					<Button type="information plain" classes="col-2" onClick={this.openTwo}>Text Modal</Button>	
 				</div>
 
 				<Modal 

@@ -38,7 +38,7 @@ class Full extends Component {
 			<div className={"container " + this.state.body}>
 				<Header {...this.props}>
 					<NavLink to="/"><img alt="logo" src={logo} className="logo"/></NavLink>
-					<div className="nav">
+					<div className="nav-header">
 						<NavLink to="/typography" activeClassName="active">Typography</NavLink>
 						<NavLink to="/buttons" activeClassName="active">Buttons</NavLink>
 						<NavLink to="/forms" activeClassName="active">Forms</NavLink>

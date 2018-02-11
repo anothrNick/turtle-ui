@@ -8,6 +8,7 @@
     --sidebar-highlight: #16a085;
     --highlight: #16a085;
     --text-color: #515253;
+    --text-muted: #636c72;
 
     --success: #1abc9c;
     --information: #2980b9;
@@ -66,6 +67,13 @@ a {
 	display: flex;
     align-items: center;
 	width: 100%;
+}
+.pull-right {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 /* PAGE LAYOUT */
