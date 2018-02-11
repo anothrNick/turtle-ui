@@ -15,7 +15,7 @@ class Button extends Component {
 	render() {
 		const classes = ["button",this.props.type,this.props.classes].join(" ");
 		return (
-			<button className={classes}>{this.props.children}</button>
+			<button className={classes} onClick={this.props.onClick}>{this.props.children}</button>
 		  );
 	}
 }
