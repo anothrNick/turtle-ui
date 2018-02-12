@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import Nav from '../components/Nav';
+import Dropdown from '../components/Dropdown';
 
 import Typography from '../app/Typography';
 import Buttons from '../app/Buttons';
@@ -50,7 +51,17 @@ class Full extends Component {
 					/>
 
 					<div className="user-nav">
-						<Button type="success">Create</Button>	
+						<Dropdown 
+							type="success"
+							width={200}
+							buttonText="Create"
+							classes="col-1">
+							<div className="grid grid-1">
+								<Button type="text plain text-left no-padding">Neutral</Button>
+								<Button type="text plain text-left no-padding">Neutral</Button>
+								<Button type="text plain text-left no-padding">Neutral</Button>
+							</div>
+						</Dropdown>
 						<Button type="text plain" classes="margin-left">user</Button>	
 					</div>
 				</div>

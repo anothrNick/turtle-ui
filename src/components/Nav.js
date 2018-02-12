@@ -20,7 +20,7 @@ class Nav extends Component {
 			<div className={classes}>
 				{this.state.links.map(function(link){
 					return (
-						<NavLink to={link.to} activeClassName="active">{link.text}</NavLink>
+						<NavLink key={link.text} to={link.to} activeClassName="active">{link.text}</NavLink>
 					)
 				})}
 			</div>

@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
 import Button from '../components/Button';
+import Dropdown from '../components/Dropdown';
+import Nav from '../components/Nav';
 
 class Buttons extends Component {
 
 	render() {
+		const testLinks = [
+			{to: '/navs#one', text: 'Item One'},
+			{to: '/navs', text: 'Item Two'},
+			{to: '/navs#three', text: 'Item Three'},
+		];
+		
 		return (
 			<div >
 				<h1>Buttons</h1>
-
+				<br/>
 				{/*we want an empty space at the end*/}
 				<div className="grid grid-5">
 					<div className="col-4">
@@ -29,6 +37,24 @@ class Buttons extends Component {
 						</div>
 					</div>
 				</div>
+
+				<br/>
+				<h2>Dropdown Button</h2>
+				<div className="grid grid-5">
+					<div className="col-4">
+						<div className="grid grid-4">
+							<Dropdown 
+								width={300}
+								buttonText="Open Dropdown"
+								classes="col-1">
+								<Nav 
+									classes="vertical grid grid-1"
+									links={testLinks}
+								/>
+							</Dropdown>
+						</div>
+					</div>
+				</div>			
 
 			</div>
 		  );

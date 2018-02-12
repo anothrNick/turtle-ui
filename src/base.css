@@ -52,6 +52,7 @@ a {
 	    "footer";
 }
 
+/* UTILITY */
 .vertical-align {
 	display: flex;
     align-items: center;
@@ -62,7 +63,6 @@ a {
     align-items: center;
     justify-content: center;
 }
-
 .align-center {
 	display: flex;
     align-items: center;
@@ -74,6 +74,9 @@ a {
     flex-direction: row;
     -ms-flex-pack: end;
     justify-content: flex-end;
+}
+.full-width {
+	width: 100%;
 }
 
 /* PAGE LAYOUT */
@@ -189,6 +192,10 @@ strong {
 	font-weight: 400;
 }
 
+.text-left {
+	text-align: left;
+	justify-content: left;
+}
 .text-300 {
 	font-weight: 300;
 }
@@ -229,6 +236,9 @@ strong {
 /* UTILITY */
 .padding {
 	padding: 15px;
+}
+.no-padding {
+	padding: 0px;
 }
 
 .margin-left {
