@@ -7,14 +7,20 @@
 	left: 0px;
     opacity: 0;
     margin-top: -10%;
-
     transition: margin .3s, opacity .3s;
+}
+.modal.from-left {
+	margin-top: 0%;
+	margin-left: -25%;
 }
 
 .modal.show {
     opacity: 1;
-    margin-top: -0%;
+    margin-top: 0%;
     z-index: 9999;
+}
+.modal.from-left.show {
+    margin-left: 0%;
 }
 
 .backdrop {

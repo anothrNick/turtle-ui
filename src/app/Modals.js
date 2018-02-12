@@ -10,7 +10,8 @@ class Modals extends Component {
 
 		this.state = {
 			openModalOne: false,
-			openModalTwo: false
+			openModalTwo: false,
+			openModalThree: false
 		}
 	}
 
@@ -30,6 +31,14 @@ class Modals extends Component {
 		this.setState({openModalTwo: false})
 	}
 
+	openThree = () => {
+		this.setState({openModalThree: true});
+	}
+
+	closeThree = () => {
+		this.setState({openModalThree: false})
+	}
+
 	render() {
 		return (
 			<div >
@@ -38,7 +47,31 @@ class Modals extends Component {
 				<div className="grid">
 					<Button type="success plain" classes="col-2" onClick={this.openOne}>Card Modal</Button>	
 					<Button type="information plain" classes="col-2" onClick={this.openTwo}>Text Modal</Button>	
+					<Button type="plain" classes="col-2" onClick={this.openThree}>Sidebar</Button>	
 				</div>
+
+				<Modal
+					classes="from-left"
+					close={this.closeThree}
+					isOpen={this.state.openModalThree}>
+
+					<div className="grid grid-4 full-height">
+						<Card 
+							classes="col-1 footer-plain"
+							footer={
+								<div className="grid grid-2">
+							    	<div className="col-2 col-right">
+										<Button type="plain text" onClick={this.closeThree}>Cancel</Button>	
+										<Button type="information plain" classes="margin-left" onClick={this.closeThree}>Submit</Button>	
+							    	</div>
+								</div>
+							}>
+							<h2>Sidebar Header</h2>
+							<p>Modal as sidebar</p>
+							<p>Example of a card used as the modal body</p>
+						</Card>
+					</div>
+				</Modal>
 
 				<Modal 
 					close={this.closeOne}
