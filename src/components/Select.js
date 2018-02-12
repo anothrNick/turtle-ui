@@ -28,7 +28,7 @@ class Select extends Component {
         			<option value="" disabled selected hidden>{this.state.placeholder}</option>
         			{this.state.options.map(function(option) {
         				return (
-        					<option value={option.value} selected={this.props.value == option.value}>{option.text}</option>
+        					<option value={option.value} selected={this.props.value === option.value}>{option.text}</option>
         				)
         			}, this)}
 		    	</select>

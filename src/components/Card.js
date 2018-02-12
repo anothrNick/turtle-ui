@@ -17,7 +17,6 @@ class Card extends Component {
 
 	render() {
 		const classes = ["card",this.state.classes,this.state.state].join(" ");
-		const textClass = ["text-", this.state.state].join("");
 
 		var card;
 

@@ -1,0 +1,15 @@
+.logo {
+	height: 64px;
+	width: 64px;
+}
+
+.user-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.user-nav > .item {
+	margin-left: 25px;
+}

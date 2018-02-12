@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Button from '../components/Button';
 import Table from '../components/Table';
 
 class Tables extends Component {
