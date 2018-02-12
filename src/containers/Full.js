@@ -30,18 +30,14 @@ class Full extends Component {
 
   	}
 
-	componentDidMount = () => {		
-
-	}
-
 	render() {
 		return (
 			<div className={"container " + this.state.body}>
 
-				<div className="header vertical">
+				<div className="header vertical-align">
 					<NavLink to="/"><img alt="logo" src={logo} className="logo"/></NavLink>
 					<Nav 
-						classes="margin-left-more"
+						classes="horizontal margin-left-more"
 						links={[
 								{to: "/typography", text: "Typography"},
 								{to: "/buttons", text: "Buttons"},

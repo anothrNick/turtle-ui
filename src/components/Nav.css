@@ -14,9 +14,11 @@
 	text-align: center;
 }
 
+.nav.horizontal a {
+	margin-right: 25px;
+}
 .nav a {
 	margin: 0px;
-	margin-right: 25px;
 	padding: 0px;
 	text-decoration: none;
 	color: var(--text-muted);

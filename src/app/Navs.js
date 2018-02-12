@@ -19,7 +19,7 @@ class Navs extends Component {
 				<h2>Horizontal Nav</h2>
 				<div className="grid grid-1">
 					<Nav 
-						classes="link-underline underline align-center"
+						classes="horizontal link-underline underline align-center"
 						links={testLinks}
 					/>
 					<Card state="alert" classes="center"><p className="text-muted">Content</p></Card>
@@ -29,7 +29,7 @@ class Navs extends Component {
 				<h2>Horizontal Nav - <small>pull right</small></h2>
 				<div className="grid grid-1">
 					<Nav 
-						classes="link-underline underline pull-right"
+						classes="horizontal link-underline underline pull-right"
 						links={testLinks}
 					/>					
 					<Card state="alert" classes="center"><p className="text-muted">Content</p></Card>
@@ -39,6 +39,7 @@ class Navs extends Component {
 				<h2>Horizontal Nav - <small>no underline</small></h2>
 				<div className="grid grid-1">
 					<Nav 
+						classes="horizontal"
 						links={testLinks}
 					/>
 					<Card state="alert" classes="center"><p className="text-muted">Content</p></Card>
@@ -48,7 +49,7 @@ class Navs extends Component {
 				<h2>Vertical Nav</h2>
 				<div className="grid grid-5">
 					<Nav 
-						classes="grid grid-1"
+						classes="vertical grid grid-1"
 						links={testLinks}
 					/>
 					<Card state="alert" classes="center col-4"><p className="text-muted">Content</p></Card>
@@ -58,7 +59,7 @@ class Navs extends Component {
 				<h2>Vertical Nav - <small>align text right</small></h2>
 				<div className="grid grid-5">
 					<Nav 
-						classes="grid grid-1 align-right"
+						classes="vertical grid grid-1 align-right"
 						links={testLinks}
 					/>
 					<Card state="alert" classes="center col-4"><p className="text-muted">Content</p></Card>
@@ -70,7 +71,7 @@ class Navs extends Component {
 					<Card state="alert" classes="center col-4"><p className="text-muted">Content</p></Card>
 					
 					<Nav 
-						classes="grid grid-1"
+						classes="vertical grid grid-1"
 						links={testLinks}
 					/>
 				</div>

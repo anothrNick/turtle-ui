@@ -52,7 +52,7 @@ a {
 	    "footer";
 }
 
-.vertical {
+.vertical-align {
 	display: flex;
     align-items: center;
 }
