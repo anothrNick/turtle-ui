@@ -4,6 +4,7 @@ A small collection of React components and styles.
 
 #### Components
 * Buttons
+* Dropdowns
 * Forms
 * Cards
 * Tables
