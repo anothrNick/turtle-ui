@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faDown from '@fortawesome/fontawesome-free-solid/faChevronDown';
+import faUp from '@fortawesome/fontawesome-free-solid/faChevronUp';
 import Button from './Button.js'
 import './Dropdown.css';
 
@@ -8,17 +11,38 @@ class Dropdown extends Component {
 	constructor(props) {
 	    super(props);
 		this.state = {
-		  isOpen: false
-		}
+		  isOpen: false,
+		  showIcon: this.props.showIcon == true
+		}   
 	}
 
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+    }
+
+    setWrapperRef = (node) => {
+        this.wrapperRef = node;
+    }
+
+    // close dropdown if clicked outside of component
+    handleClickOutside = (event) => {
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+			if (this.state.isOpen) this.setState({isOpen: false});
+        }
+    }
+
 	toggle = () => {
-		this.setState({isOpen: !this.state.isOpen})
+		this.setState({isOpen: !this.state.isOpen});
 	}
 
 	render() {
 		var width = this.props.width ? this.props.width : 300;
 		var show = this.state.isOpen ? "show" : "";
+		var icon = this.state.isOpen ? faUp : faDown;
 
 		const classes = ["dropdown", this.props.classes].join(" ");
 		const itemClasses = ["dropdown-items", show].join(" ");
@@ -27,8 +51,10 @@ class Dropdown extends Component {
 		}
 
 		return (
-			<div className={classes}>
-				<Button classes="full-width" type={this.props.type || "information"} onClick={this.toggle}>{this.props.buttonText}</Button>
+			<div className={classes} ref={this.setWrapperRef}>
+				<Button classes="full-width" type={this.props.type || "information"} onClick={this.toggle}>
+					{this.props.buttonText} {this.state.showIcon && <FontAwesomeIcon icon={icon} />}
+				</Button>
 				<div className={itemClasses} style={styles}>
 					{this.props.children}
 				</div>

@@ -2,6 +2,11 @@
 	position: relative;
 }
 
+.dropdown .svg-inline--fa {
+	margin-top: 1px;
+	margin-left: 4px;
+}
+
 .dropdown-items {
 	position: absolute;
 	background-color: #FFF;

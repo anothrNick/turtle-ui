@@ -52,6 +52,7 @@ class Full extends Component {
 
 					<div className="user-nav">
 						<Dropdown 
+							showIcon={true}
 							type="success"
 							width={200}
 							buttonText="Create"
@@ -62,7 +63,18 @@ class Full extends Component {
 								<Button type="text plain text-left no-padding">Neutral</Button>
 							</div>
 						</Dropdown>
-						<Button type="text plain" classes="margin-left">user</Button>	
+
+						<Dropdown 
+							type="text plain"
+							width={200}
+							buttonText="user"
+							classes="col-1 item">
+							<div className="grid grid-1">
+								<Button type="text plain text-left no-padding">Neutral</Button>
+								<Button type="text plain text-left no-padding">Neutral</Button>
+								<Button type="text plain text-left no-padding">Neutral</Button>
+							</div>
+						</Dropdown>
 					</div>
 				</div>
 

@@ -11,7 +11,7 @@ class Buttons extends Component {
 			{to: '/navs', text: 'Item Two'},
 			{to: '/navs#three', text: 'Item Three'},
 		];
-		
+
 		return (
 			<div >
 				<h1>Buttons</h1>
@@ -45,6 +45,7 @@ class Buttons extends Component {
 						<div className="grid grid-4">
 							<Dropdown 
 								width={300}
+								showIcon={true}
 								buttonText="Open Dropdown"
 								classes="col-1">
 								<Nav 
