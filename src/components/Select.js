@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faDown from '@fortawesome/fontawesome-free-solid/faChevronDown';
 import './Select.css';
 
 
@@ -24,14 +26,17 @@ class Select extends Component {
 		return (
 			<label>
 				<span><strong>{this.state.label}</strong></span>
-		    	<select className={classes} type={this.state.type}>
-        			<option value="" disabled selected hidden>{this.state.placeholder}</option>
-        			{this.state.options.map(function(option) {
-        				return (
-        					<option value={option.value} selected={this.props.value === option.value}>{option.text}</option>
-        				)
-        			}, this)}
-		    	</select>
+				<div className="select-span">
+			    	<select className={classes} type={this.state.type}>
+	        			<option value="" disabled selected hidden>{this.state.placeholder}</option>
+	        			{this.state.options.map(function(option) {
+	        				return (
+	        					<option value={option.value} selected={this.props.value === option.value}>{option.text}</option>
+	        				)
+	        			}, this)}
+			    	</select>
+		    		<FontAwesomeIcon icon={faDown} />
+		    	</div>
 		    	<span className={textClass}>{this.state.message}</span>
 		 	</label>
 		  );

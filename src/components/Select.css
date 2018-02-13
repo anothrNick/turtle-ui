@@ -3,16 +3,26 @@
 	margin: 5px 0px;
 	border: 2px solid var(--border-color);
 	border-radius: 2px;
-	padding: 9.5px;
+	padding: 10px;
 	font-size: 16px;
 	background-color: #FFF;
 	font-family: inherit;
 	color: var(--text-color);
 
-	/*-webkit-appearance: none; 
+	-webkit-appearance: none; 
 	-moz-appearance: none;
 	appearance: none;
-	background-image: url(...);*/
+	/*background-image: url(...);*/
+}
+
+.select-span {
+	position: relative;
+}
+.select-span .svg-inline--fa.fa-chevron-down {
+	position: absolute;
+    right: 10px;
+    top: 20px;
+    color: var(--text-muted);
 }
 
 .select.success {
