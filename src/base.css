@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }
 
+input, select, textarea {
+    /*box-shadow: inset 0px 2px 1px 0px rgba(0,0,0,.05);*/
+}
+
 body {
   margin: 0;
   padding: 0;
