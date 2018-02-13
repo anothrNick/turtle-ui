@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+.button.no-focus:focus {
+	outline: none;
+}
+
 .button.success {
 	background-color: var(--success);
 	border-color: var(--success);

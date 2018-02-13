@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faUser from '@fortawesome/fontawesome-free-solid/faUserCircle';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import Nav from '../components/Nav';
@@ -67,8 +69,9 @@ class Full extends Component {
 						<Dropdown 
 							type="text plain"
 							width={200}
-							buttonText="user"
-							classes="col-1 item">
+							buttonText={<FontAwesomeIcon style={{fontSize: "32px"}} icon={faUser} />}
+							buttonClasses={"no-focus"}
+							classes="col-1">
 							<div className="grid grid-1">
 								<Button type="text plain text-left no-padding">Neutral</Button>
 								<Button type="text plain text-left no-padding">Neutral</Button>

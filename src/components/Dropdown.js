@@ -46,13 +46,14 @@ class Dropdown extends Component {
 
 		const classes = ["dropdown", this.props.classes].join(" ");
 		const itemClasses = ["dropdown-items", show].join(" ");
+		const buttonClasses = ["full-width", this.props.buttonClasses].join(" ");
 		const styles = {
 			"width": width + "px"
 		}
 
 		return (
 			<div className={classes} ref={this.setWrapperRef}>
-				<Button classes="full-width" type={this.props.type || "information"} onClick={this.toggle}>
+				<Button classes={buttonClasses} type={this.props.type || "information"} onClick={this.toggle}>
 					{this.props.buttonText} {this.state.showIcon && <FontAwesomeIcon icon={icon} />}
 				</Button>
 				<div className={itemClasses} style={styles}>
