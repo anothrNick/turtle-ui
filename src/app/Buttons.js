@@ -3,6 +3,14 @@ import Button from '../components/Button';
 import Dropdown from '../components/Dropdown';
 import Nav from '../components/Nav';
 
+import List from '../components/List';
+import ListItem from '../components/ListItem';
+
+import user from '@fortawesome/fontawesome-free-solid/faUser';
+import database from '@fortawesome/fontawesome-free-solid/faDatabase';
+import siteMap from '@fortawesome/fontawesome-free-solid/faSitemap';
+import tasks from '@fortawesome/fontawesome-free-solid/faTasks';
+
 class Buttons extends Component {
 
 	render() {
@@ -48,10 +56,12 @@ class Buttons extends Component {
 								showIcon={true}
 								buttonText="Open Dropdown"
 								classes="col-1">
-								<Nav 
-									classes="vertical grid grid-1"
-									links={testLinks}
-								/>
+								<List>
+									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
+									<ListItem icon={database} title="Create Database" description="Spin it up"/>
+									<ListItem icon={siteMap} title="Site Map" description="No idea... a site map"/>
+									<ListItem icon={tasks} title="Tasks" description="Manage tasks"/>
+								</List>
 							</Dropdown>
 						</div>
 					</div>

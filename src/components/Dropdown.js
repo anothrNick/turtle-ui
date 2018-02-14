@@ -12,7 +12,7 @@ class Dropdown extends Component {
 	    super(props);
 		this.state = {
 		  isOpen: false,
-		  showIcon: this.props.showIcon == true
+		  showIcon: this.props.showIcon === true
 		}   
 	}
 

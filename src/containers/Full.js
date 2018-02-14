@@ -15,7 +15,18 @@ import Forms from '../app/Forms';
 import Modals from '../app/Modals';
 import Navs from '../app/Navs';
 import Tables from '../app/Tables';
+import Lists from '../app/Lists';
 import Home from '../app/Home';
+
+import List from '../components/List';
+import ListItem from '../components/ListItem';
+
+import user from '@fortawesome/fontawesome-free-solid/faUser';
+import database from '@fortawesome/fontawesome-free-solid/faDatabase';
+import siteMap from '@fortawesome/fontawesome-free-solid/faSitemap';
+import tasks from '@fortawesome/fontawesome-free-solid/faTasks';
+import cog from '@fortawesome/fontawesome-free-solid/faCog';
+import address from '@fortawesome/fontawesome-free-solid/faAddressCard';
 
 import logo from '../logo.svg';
 import './Full.css';
@@ -48,7 +59,8 @@ class Full extends Component {
 								{to: "/cards", text: "Cards"},
 								{to: "/tables", text: "Tables"},
 								{to: "/modals", text: "Modals"},
-								{to: "/navs", text: "Navs"}
+								{to: "/navs", text: "Navs"},
+								{to: "/lists", text: "Lists"}
 							]}
 					/>
 
@@ -56,13 +68,16 @@ class Full extends Component {
 						<Dropdown 
 							showIcon={true}
 							type="success"
-							width={200}
+							width={250}
 							buttonText="Create"
 							classes="col-1">
 							<div className="grid grid-1">
-								<Button type="text plain text-left no-padding">Neutral</Button>
-								<Button type="text plain text-left no-padding">Neutral</Button>
-								<Button type="text plain text-left no-padding">Neutral</Button>
+								<List>
+									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
+									<ListItem icon={database} title="Create Database" description="Spin it up"/>
+									<ListItem icon={siteMap} title="Site Map" description="No idea... a site map"/>
+									<ListItem icon={tasks} title="Tasks" description="Manage tasks"/>
+								</List>
 							</div>
 						</Dropdown>
 
@@ -73,9 +88,10 @@ class Full extends Component {
 							buttonClasses={"no-click"}
 							classes="col-1">
 							<div className="grid grid-1">
-								<Button type="text plain text-left no-padding">Neutral</Button>
-								<Button type="text plain text-left no-padding">Neutral</Button>
-								<Button type="text plain text-left no-padding">Neutral</Button>
+								<List>
+									<ListItem icon={address} title="Profile" description="Manage your profile"/>
+									<ListItem icon={cog} title="Settings" description="Edit settings"/>
+								</List>
 							</div>
 						</Dropdown>
 					</div>
@@ -129,6 +145,12 @@ class Full extends Component {
 							path="/navs" 
 							exact 
 							component={() => <Navs />}
+							/>
+
+						<Route 
+							path="/lists" 
+							exact 
+							component={() => <Lists />}
 							/>
 					</Switch>
 
