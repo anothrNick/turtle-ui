@@ -32,6 +32,8 @@
 	z-index: -1;
     opacity: 0;
 	background: rgba(220, 220, 220, 0.5);
+
+	transition: opacity .3s
 }
 
 .backdrop.show {

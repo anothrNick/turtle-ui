@@ -10,10 +10,30 @@
     font-weight: normal;
 	display: flex;
     justify-content: center;
+    position: relative;
+}
+.button:before {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+	background: transparent;
+	transition: background .3s;
+}
+.button:hover:before {
+	background: rgba(255, 255, 255, .05);
+}
+.button:active:before {
+	background: rgba(0, 0, 0, .05);
+}
+.button:focus {
+	outline: none;
 }
 
-.button.no-focus:focus {
-	outline: none;
+.button.no-click:before {
+	display: none;
 }
 
 .button.success {

@@ -70,7 +70,7 @@ class Full extends Component {
 							type="text plain"
 							width={200}
 							buttonText={<FontAwesomeIcon style={{fontSize: "32px"}} icon={faUser} />}
-							buttonClasses={"no-focus"}
+							buttonClasses={"no-click"}
 							classes="col-1">
 							<div className="grid grid-1">
 								<Button type="text plain text-left no-padding">Neutral</Button>
