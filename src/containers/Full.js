@@ -59,8 +59,7 @@ class Full extends Component {
 								{to: "/cards", text: "Cards"},
 								{to: "/tables", text: "Tables"},
 								{to: "/modals", text: "Modals"},
-								{to: "/navs", text: "Navs"},
-								{to: "/lists", text: "Lists"}
+								{to: "/navs", text: "Navs"}
 							]}
 					/>
 
