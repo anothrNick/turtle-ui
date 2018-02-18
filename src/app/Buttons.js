@@ -54,13 +54,33 @@ class Buttons extends Component {
 							<Dropdown 
 								width={300}
 								showIcon={true}
-								buttonText="Open Dropdown"
+								buttonText="Dropdown"
 								classes="col-1">
 								<List>
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 									<ListItem icon={database} title="Create Database" description="Spin it up"/>
 									<ListItem icon={siteMap} title="Site Map" description="No idea... a site map"/>
 									<ListItem icon={tasks} title="Tasks" description="Manage tasks"/>
+								</List>
+							</Dropdown>
+
+							<Dropdown 
+								width={300}
+								showIcon={true}
+								buttonText="Align Right"
+								classes="col-1 align-items-right">
+								<List>
+									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
+								</List>
+							</Dropdown>
+
+							<Dropdown 
+								width={300}
+								showIcon={true}
+								buttonText="Align Left"
+								classes="col-1 align-items-left">
+								<List>
+									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 								</List>
 							</Dropdown>
 						</div>

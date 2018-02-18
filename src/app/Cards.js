@@ -68,26 +68,22 @@ class Cards extends Component {
 						<p>Example of a card with a header</p>
 					</Card>
 
-					<div className="col-2 margin-top-more">
-						<div className="grid grid-2">
-							<Card 
-								classes="footer-plain"
-								footer={
-									<div className="grid grid-2">
-									    	<div className="col-2 col-right">
-											<Button type="plain text">Cancel</Button>	
-											<Button type="success plain" classes="margin-left">Login</Button>	
-								    	</div>
-									</div>
-								}>
-								<h2>Login</h2>
-								<div className="grid grid-1">
-							    	<Input placeholder="enter username..." label="Username"/>
-							    	<Input placeholder="enter password..." label="Password" type="password"/>
-								</div>
-							</Card>
+					<Card 
+						classes="footer-plain margin-top-more"
+						footer={
+							<div className="grid grid-2">
+							    	<div className="col-2 col-right">
+									<Button type="plain text">Cancel</Button>	
+									<Button type="success plain" classes="margin-left">Login</Button>	
+						    	</div>
+							</div>
+						}>
+						<h2>Login</h2>
+						<div className="grid grid-1">
+					    	<Input placeholder="enter username..." label="Username"/>
+					    	<Input placeholder="enter password..." label="Password" type="password"/>
 						</div>
-					</div>
+					</Card>
 
 					<div className="col-2 margin-top-more">
 						<div className="grid grid-4">

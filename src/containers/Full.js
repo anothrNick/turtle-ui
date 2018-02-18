@@ -7,6 +7,8 @@ import Footer from '../components/Footer';
 import Button from '../components/Button';
 import Nav from '../components/Nav';
 import Dropdown from '../components/Dropdown';
+import Card from '../components/Card';
+import Modal from '../components/Modal';
 
 import Typography from '../app/Typography';
 import Buttons from '../app/Buttons';
@@ -27,6 +29,8 @@ import siteMap from '@fortawesome/fontawesome-free-solid/faSitemap';
 import tasks from '@fortawesome/fontawesome-free-solid/faTasks';
 import cog from '@fortawesome/fontawesome-free-solid/faCog';
 import address from '@fortawesome/fontawesome-free-solid/faAddressCard';
+import bars from '@fortawesome/fontawesome-free-solid/faBars';
+import times from '@fortawesome/fontawesome-free-solid/faTimes';
 
 import logo from '../logo.svg';
 import './Full.css';
@@ -39,19 +43,29 @@ class Full extends Component {
 	constructor(props) {
 	    super(props);
 		this.state = {
-		  body: ""
+		  body: "",
+		  sidebar: false
 		}
 
   	}
 
+	toggleSidebar = () => {
+		var body = !this.state.sidebar ? "modal-open" : "";
+		this.setState({sidebar: !this.state.sidebar, body: body});
+	}
+
 	render() {
 		return (
 			<div className={"container " + this.state.body}>
+				
 
 				<div className="header vertical-align">
 					<NavLink to="/"><img alt="logo" src={logo} className="logo"/></NavLink>
+					<div className="show-small">
+						<Button type="plain" classes="text plain no-click" onClick={this.toggleSidebar}><FontAwesomeIcon icon={bars} /></Button>	
+					</div>
 					<Nav 
-						classes="horizontal margin-left-more"
+						classes="horizontal margin-left-more hidden-small"
 						links={[
 								{to: "/typography", text: "Typography"},
 								{to: "/buttons", text: "Buttons"},
@@ -85,7 +99,7 @@ class Full extends Component {
 							width={200}
 							buttonText={<FontAwesomeIcon style={{fontSize: "32px"}} icon={faUser} />}
 							buttonClasses={"no-click"}
-							classes="col-1">
+							classes="col-1 align-items-right">
 							<div className="grid grid-1">
 								<List>
 									<ListItem icon={address} title="Profile" description="Manage your profile"/>
@@ -96,7 +110,36 @@ class Full extends Component {
 					</div>
 				</div>
 
-				<div className="content">
+				<div className="content responsive">
+					<Modal
+						classes="from-left"
+						close={this.toggleSidebar}
+						isOpen={this.state.sidebar}>
+
+						<div className="grid grid-2 full-height">
+							<Card classes="col-1 footer-plain">
+								<div className="grid grid-2">
+							    	<div className="col-2 col-right">
+										<Button type="plain text" onClick={this.toggleSidebar}><FontAwesomeIcon icon={times} /></Button>	
+							    	</div>
+								</div>
+
+								<Nav 
+									classes="vertical grid grid-1"
+									links={[
+											{to: "/typography", text: "Typography"},
+											{to: "/buttons", text: "Buttons"},
+											{to: "/forms", text: "Forms"},
+											{to: "/cards", text: "Cards"},
+											{to: "/tables", text: "Tables"},
+											{to: "/modals", text: "Modals"},
+											{to: "/navs", text: "Navs"}
+										]}
+								/>
+							</Card>
+						</div>
+					</Modal>
+
 					<Switch>
 						<Route 
 							path="/" 
