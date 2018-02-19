@@ -39,15 +39,15 @@
 }
 
 .nav a:hover {
-	color: var(--highlight);
+	color: var(--brand);
 }
 .nav.link-underline a:hover {
-	box-shadow: inset 0px -2px 0px var(--highlight);
+	box-shadow: inset 0px -2px 0px var(--brand);
 }
 
 .nav>a.active {
-	color: var(--highlight);
+	color: var(--brand);
 }
 .nav.link-underline a.active {
-	box-shadow: inset 0px -2px 0px var(--highlight);
+	box-shadow: inset 0px -2px 0px var(--brand);
 }

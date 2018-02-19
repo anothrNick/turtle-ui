@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faDown from '@fortawesome/fontawesome-free-solid/faChevronDown';
 import faUp from '@fortawesome/fontawesome-free-solid/faChevronUp';
-import Button from './Button.js'
+import Button from './Button.js';
 import './Dropdown.css';
 
 
@@ -53,7 +53,7 @@ class Dropdown extends Component {
 
 		return (
 			<div className={classes} ref={this.setWrapperRef}>
-				<Button classes={buttonClasses} type={this.props.type || "information"} onClick={this.toggle}>
+				<Button classes={buttonClasses} type={this.props.type || ""} onClick={this.toggle}>
 					{this.props.buttonText} {this.state.showIcon && <FontAwesomeIcon icon={icon} />}
 				</Button>
 				<div className={itemClasses} style={styles}>

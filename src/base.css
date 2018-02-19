@@ -4,16 +4,29 @@
     --content-background: #e7ebee;
     --border-color: #cfdbe2;
     --card-border-color: #f1f1f1;
-    --dark-header-color: #34495e;
-    --sidebar-highlight: #16a085;
-    --highlight: #16a085;
     --text-color: #515253;
     --text-muted: #636c72;
 
+    /* brand color */
+    --brand: #008F95;
+    --accent: #EB6E80;
+
+    /* colors */
+    /* https://coolors.co/f8ffe5-06d6a0-1b9aaa-ef476f-ffc43d */
+    /* --neutral: #F8FFE5; */
+    /*
+    --success: #06D6A0;
+    --information: #1B9AAA;
+    --warning: #FFC43D;
+    --danger: #EF476F;
+	*/
+
+    /* more standard colors */
     --success: #1abc9c;
     --information: #2980b9;
     --warning: #e67e22;
     --danger: #c0392b;
+    
 }
 
 * {
@@ -45,7 +58,6 @@ a {
 	text-decoration: none;
 	color: var(--text-color);
 }
-
 
 .container {
 	min-height: 100vh;

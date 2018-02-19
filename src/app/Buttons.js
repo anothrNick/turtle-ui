@@ -26,22 +26,38 @@ class Buttons extends Component {
 				<br/>
 				{/*we want an empty space at the end*/}
 				<div className="grid grid-5">
-					<div className="col-4">
+					<div className="col-3">
+						<div className="grid grid-3">
+							<Button>Neutral</Button>
+							<Button type="brand">Brand</Button>
+							<Button type="accent">Accent</Button>
+
+							<Button type="plain">Neutral</Button>
+							<Button type="brand plain">Brand</Button>
+							<Button type="accent plain">Accent</Button>
+
+							<Button type="text plain">Neutral</Button>
+							<Button type="brand text plain">Brand</Button>
+							<Button type="accent text plain">Accent</Button>
+						</div>
+					</div>
+
+					<div className="col-4 margin-top-more">
 						<div className="grid grid-4">
-							<Button classes="col-1">Neutral</Button>	
-							<Button type="success" classes="col-1">Success</Button>	
-							<Button type="information" classes="col-1">Information</Button>	
-							<Button type="danger" classes="col-1">Danger</Button>
+							<Button type="success">Success</Button>	
+							<Button type="information">Information</Button>
+							<Button type="warning">Warning</Button>
+							<Button type="danger">Danger</Button>
 
-							<Button type="plain" classes="col-1">Neutral</Button>	
-							<Button type="success plain" classes="col-1">Success</Button>	
-							<Button type="information plain" classes="col-1">Information</Button>	
-							<Button type="danger plain" classes="col-1">Danger</Button>	
+							<Button type="success plain">Success</Button>	
+							<Button type="information plain">Information</Button>		
+							<Button type="warning plain">Warning</Button>
+							<Button type="danger plain">Danger</Button>
 
-							<Button type="text plain" classes="col-1">Neutral</Button>	
-							<Button type="success text plain" classes="col-1">Success</Button>	
-							<Button type="information text plain" classes="col-1">Information</Button>	
-							<Button type="danger text plain" classes="col-1">Danger</Button>	
+							<Button type="success text plain">Success</Button>	
+							<Button type="information text plain">Information</Button>	
+							<Button type="warning text plain">Warning</Button>	
+							<Button type="danger text plain">Danger</Button>	
 						</div>
 					</div>
 				</div>
@@ -55,7 +71,9 @@ class Buttons extends Component {
 								width={300}
 								showIcon={true}
 								buttonText="Dropdown"
-								classes="col-1">
+								classes="col-1"
+								buttonClasses="text plain"
+								type="">
 								<List>
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 									<ListItem icon={database} title="Create Database" description="Spin it up"/>
@@ -68,7 +86,9 @@ class Buttons extends Component {
 								width={300}
 								showIcon={true}
 								buttonText="Align Right"
-								classes="col-1 align-items-right">
+								classes="col-1 align-items-right"
+								buttonClasses="plain"
+								type="brand">
 								<List>
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 								</List>
@@ -78,7 +98,8 @@ class Buttons extends Component {
 								width={300}
 								showIcon={true}
 								buttonText="Align Left"
-								classes="col-1 align-items-left">
+								classes="col-1 align-items-left"
+								type="information">
 								<List>
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 								</List>

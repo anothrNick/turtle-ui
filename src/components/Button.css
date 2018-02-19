@@ -36,6 +36,18 @@
 	display: none;
 }
 
+.button.brand {
+	background-color: var(--brand);
+	border-color: var(--brand);
+	color: #FFF;
+}
+
+.button.accent {
+	background-color: var(--accent);
+	border-color: var(--accent);
+	color: #FFF;
+}
+
 .button.success {
 	background-color: var(--success);
 	border-color: var(--success);
@@ -61,6 +73,16 @@
 }
 
 .plain {
+	background-color: #FFF;
+}
+
+.button.brand.plain {
+	color: var(--brand);
+	background-color: #FFF;
+}
+
+.button.accent.plain {
+	color: var(--accent);
 	background-color: #FFF;
 }
 

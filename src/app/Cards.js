@@ -16,7 +16,7 @@ class Cards extends Component {
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
 									<Button type="plain text">Cancel</Button>	
-									<Button type="information plain" classes="margin-left">Submit</Button>	
+									<Button type="accent" classes="margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}>
@@ -30,7 +30,7 @@ class Cards extends Component {
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
 									<Button type="plain text">Cancel</Button>	
-									<Button type="information plain" classes="margin-left">Submit</Button>	
+									<Button type="accent" classes="margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}>
@@ -44,7 +44,7 @@ class Cards extends Component {
 							<div className="grid grid-2">
 						    	<div className="col-2 col-right">
 									<Button type="text">Cancel</Button>	
-									<Button type="information" classes="margin-left">Submit</Button>	
+									<Button type="accent" classes="margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}
@@ -60,12 +60,12 @@ class Cards extends Component {
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
 									<Button type="plain text">Cancel</Button>	
-									<Button type="information plain" classes="margin-left">Submit</Button>	
+									<Button type="information text plain" classes="margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}>
 						<h2>Card Header</h2>
-						<p>Example of a card with a header</p>
+						<p>Example of a card with border color</p>
 					</Card>
 
 					<Card 
@@ -74,7 +74,7 @@ class Cards extends Component {
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
 									<Button type="plain text">Cancel</Button>	
-									<Button type="success plain" classes="margin-left">Login</Button>	
+									<Button type="brand plain" classes="margin-left">Login</Button>	
 						    	</div>
 							</div>
 						}>

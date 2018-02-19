@@ -9,6 +9,7 @@ import Nav from '../components/Nav';
 import Dropdown from '../components/Dropdown';
 import Card from '../components/Card';
 import Modal from '../components/Modal';
+import Logo from '../components/Logo';
 
 import Typography from '../app/Typography';
 import Buttons from '../app/Buttons';
@@ -32,7 +33,6 @@ import address from '@fortawesome/fontawesome-free-solid/faAddressCard';
 import bars from '@fortawesome/fontawesome-free-solid/faBars';
 import times from '@fortawesome/fontawesome-free-solid/faTimes';
 
-import logo from '../logo.svg';
 import './Full.css';
 
 import { Route, Switch } from 'react-router-dom';
@@ -60,7 +60,9 @@ class Full extends Component {
 				
 
 				<div className="header vertical-align">
-					<NavLink to="/"><img alt="logo" src={logo} className="logo"/></NavLink>
+					<NavLink to="/">
+						<Logo classes="logo" />
+					</NavLink>
 					<div className="show-small">
 						<Button type="plain" classes="text plain no-click" onClick={this.toggleSidebar}><FontAwesomeIcon icon={bars} /></Button>	
 					</div>
@@ -80,7 +82,7 @@ class Full extends Component {
 					<div className="user-nav">
 						<Dropdown 
 							showIcon={true}
-							type="success"
+							type="brand"
 							width={250}
 							buttonText="Create"
 							classes="col-1">
