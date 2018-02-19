@@ -1,7 +1,7 @@
 .input {
 	width: 100%;
 	margin: 5px 0px;
-	border: 2px solid var(--border-color);
+	border: 2px solid var(--card-border-color);
 	border-radius: 2px;
 	padding: 10px;
 	font-size: 16px;
