@@ -12,6 +12,7 @@ class Input extends Component {
 		  label: props.label ? props.label : "",
 		  message: props.message ? props.message : "",
 		  state: props.state ? props.state : "",
+		  labelClasses: props.labelClasses ? props.labelClasses : "",
 		  classes: props.classes ? props.classes : ""
 		}
 
@@ -20,8 +21,9 @@ class Input extends Component {
 	render() {
 		const classes = ["input",this.state.classes,this.state.state].join(" ");
 		const textClass = ["text-", this.state.state].join("");
+		const labelClass = ["", this.state.labelClasses].join("");
 		return (
-			<label>
+			<label className={labelClass} >
 				<span><strong>{this.state.label}</strong></span>
 		    	<input className={classes} name={this.props.name} placeholder={this.state.placeholder} type={this.state.type} value={this.props.value} onChange={this.props.onChange}/>
 		    	<span className={textClass}>{this.state.message}</span>
