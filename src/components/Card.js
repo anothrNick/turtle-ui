@@ -5,34 +5,28 @@ import './Card.css';
 
 class Card extends Component {
 
-	constructor(props) {
-	    super(props);
-		this.state = {
-		  state: props.state ? props.state : "",
-		  classes: props.classes ? props.classes : "",
-		  footer: props.footer
-		}
-
-	}
-
 	render() {
-		const classes = ["card",this.state.classes,this.state.state].join(" ");
+		const classes = [
+							"card",
+							(this.props.classes ? this.props.classes : ""),
+							(this.props.state ? this.props.state : "")
+						].join(" ");
 
 		var card;
 
 		if (this.props.to) {
 			card = <NavLink to={this.props.to} className={classes}>
 						<div className="card-content">{this.props.children}</div>
-						{this.state.footer && 
-							<div className="card-footer">{this.state.footer}</div>					
+						{this.props.footer && 
+							<div className="card-footer">{this.props.footer}</div>					
 						}
 					</NavLink>
 		}
 		else {
-			card = <div className={classes}>
+			card = <div className={classes} onClick={this.props.onClick}>
 						<div className="card-content">{this.props.children}</div>
-						{this.state.footer && 
-							<div className="card-footer">{this.state.footer}</div>					
+						{this.props.footer && 
+							<div className="card-footer">{this.props.footer}</div>					
 						}
 					</div>
 		}

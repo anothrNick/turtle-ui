@@ -23,7 +23,7 @@ class Input extends Component {
 		return (
 			<label>
 				<span><strong>{this.state.label}</strong></span>
-		    	<input className={classes} placeholder={this.state.placeholder} type={this.state.type} value={this.props.value}/>
+		    	<input className={classes} name={this.props.name} placeholder={this.state.placeholder} type={this.state.type} value={this.props.value} onChange={this.props.onChange}/>
 		    	<span className={textClass}>{this.state.message}</span>
 		 	</label>
 		  );

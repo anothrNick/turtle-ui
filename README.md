@@ -18,6 +18,7 @@ A small collection of React components and styles.
 
 #### TODO
 * Responsiveness
+* Don't use props as initial state
 
 #### Run Demo Site
 ```
