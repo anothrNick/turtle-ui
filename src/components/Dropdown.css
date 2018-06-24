@@ -43,6 +43,10 @@
 	margin-top: 15px;
 }
 
+.less-margin .dropdown-items.show {
+	margin-top: 5px;
+}
+
 .dropdown-items::before {
     content: '';
     position: absolute;

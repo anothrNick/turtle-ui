@@ -30,7 +30,7 @@ class Dropdown extends Component {
 
     // close dropdown if clicked outside of component
     handleClickOutside = (event) => {
-        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+    	if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
 			if (this.state.isOpen) this.setState({isOpen: false});
         }
     }
@@ -53,10 +53,10 @@ class Dropdown extends Component {
 
 		return (
 			<div className={classes} ref={this.setWrapperRef}>
-				<Button classes={buttonClasses} type={this.props.type || ""} onClick={this.toggle}>
+				<Button classes={buttonClasses + " " + (this.props.type || "")} style={this.props.buttonStyle} onClick={this.toggle}>
 					{this.props.buttonText} {this.state.showIcon && <FontAwesomeIcon icon={icon} />}
 				</Button>
-				<div className={itemClasses} style={styles}>
+				<div className={itemClasses} style={styles} onClick={this.toggle}>
 					{this.props.children}
 				</div>
 			</div>

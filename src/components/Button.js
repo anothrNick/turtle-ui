@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faCircle from '@fortawesome/fontawesome-free-solid/faCircleNotch';
+
 import './Button.css';
 
 
@@ -13,9 +16,13 @@ class Button extends Component {
 	}
 
 	render() {
-		const classes = ["button",this.props.type,this.props.classes].join(" ");
+		const classes = ["button", this.props.classes].join(" ");
+		const disabled = (this.props.loading === true);
 		return (
-			<button className={classes} onClick={this.props.onClick}>{this.props.children}</button>
+			<button style={this.props.style} disabled={disabled} className={classes} onClick={this.props.onClick} type={this.props.type || 'button'}>
+				{disabled && <FontAwesomeIcon className="fa-spin" icon={faCircle} />}
+				{!disabled && this.props.children}
+			</button>
 		  );
 	}
 }

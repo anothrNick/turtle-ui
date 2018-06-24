@@ -82,7 +82,7 @@ class Full extends Component {
 					<div className="user-nav">
 						<Dropdown 
 							showIcon={true}
-							type="brand"
+							buttonClasses="brand"
 							width={250}
 							buttonText="Create"
 							classes="col-1">
@@ -101,6 +101,7 @@ class Full extends Component {
 							width={200}
 							buttonText={<FontAwesomeIcon style={{fontSize: "32px"}} icon={faUser} />}
 							buttonClasses={"no-click"}
+							buttonStyle={{"paddingRight": "0"}}
 							classes="col-1 align-items-right">
 							<div className="grid grid-1">
 								<List>

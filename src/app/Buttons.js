@@ -29,35 +29,35 @@ class Buttons extends Component {
 					<div className="col-3">
 						<div className="grid grid-3">
 							<Button>Neutral</Button>
-							<Button type="brand">Brand</Button>
-							<Button type="accent">Accent</Button>
+							<Button classes="brand">Brand</Button>
+							<Button classes="accent">Accent</Button>
 
-							<Button type="plain">Neutral</Button>
-							<Button type="brand plain">Brand</Button>
-							<Button type="accent plain">Accent</Button>
+							<Button classes="plain">Neutral</Button>
+							<Button classes="brand plain">Brand</Button>
+							<Button classes="accent plain">Accent</Button>
 
-							<Button type="text plain">Neutral</Button>
-							<Button type="brand text plain">Brand</Button>
-							<Button type="accent text plain">Accent</Button>
+							<Button classes="text plain">Neutral</Button>
+							<Button classes="brand text plain">Brand</Button>
+							<Button classes="accent text plain">Accent</Button>
 						</div>
 					</div>
 
 					<div className="col-4 margin-top-more">
 						<div className="grid grid-4">
-							<Button type="success">Success</Button>	
-							<Button type="information">Information</Button>
-							<Button type="warning">Warning</Button>
-							<Button type="danger">Danger</Button>
+							<Button classes="success">Success</Button>	
+							<Button classes="information">Information</Button>
+							<Button classes="warning">Warning</Button>
+							<Button classes="danger">Danger</Button>
 
-							<Button type="success plain">Success</Button>	
-							<Button type="information plain">Information</Button>		
-							<Button type="warning plain">Warning</Button>
-							<Button type="danger plain">Danger</Button>
+							<Button classes="success plain">Success</Button>	
+							<Button classes="information plain">Information</Button>		
+							<Button classes="warning plain">Warning</Button>
+							<Button classes="danger plain">Danger</Button>
 
-							<Button type="success text plain">Success</Button>	
-							<Button type="information text plain">Information</Button>	
-							<Button type="warning text plain">Warning</Button>	
-							<Button type="danger text plain">Danger</Button>	
+							<Button classes="success text plain">Success</Button>	
+							<Button classes="information text plain">Information</Button>	
+							<Button classes="warning text plain">Warning</Button>	
+							<Button classes="danger text plain">Danger</Button>	
 						</div>
 					</div>
 				</div>
@@ -72,8 +72,7 @@ class Buttons extends Component {
 								showIcon={true}
 								buttonText="Dropdown"
 								classes="col-1"
-								buttonClasses="text plain"
-								type="">
+								buttonClasses="text plain">
 								<List>
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 									<ListItem icon={database} title="Create Database" description="Spin it up"/>
@@ -87,8 +86,7 @@ class Buttons extends Component {
 								showIcon={true}
 								buttonText="Align Right"
 								classes="col-1 align-items-right"
-								buttonClasses="plain"
-								type="brand">
+								buttonClasses="brand plain">
 								<List>
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 								</List>
@@ -99,7 +97,7 @@ class Buttons extends Component {
 								showIcon={true}
 								buttonText="Align Left"
 								classes="col-1 align-items-left"
-								type="information">
+								buttonClasses="information">
 								<List>
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 								</List>
