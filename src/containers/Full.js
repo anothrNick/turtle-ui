@@ -123,11 +123,12 @@ class Full extends Component {
 							<Card classes="col-1 footer-plain">
 								<div className="grid grid-2">
 							    	<div className="col-2 col-right">
-										<Button type="plain text" onClick={this.toggleSidebar}><FontAwesomeIcon icon={times} /></Button>	
+										<Button classes="plain text" onClick={this.toggleSidebar}><FontAwesomeIcon icon={times} /></Button>	
 							    	</div>
 								</div>
 
 								<Nav 
+									onClickCallback={this.toggleSidebar}
 									classes="vertical grid grid-1"
 									links={[
 											{to: "/typography", text: "Typography"},
