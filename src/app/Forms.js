@@ -42,8 +42,8 @@ class Forms extends Component {
 			    	<Select placeholder="a select" options={options} message="a more descriptive message" />
 
 			    	<div className="col-2 col-right">
-						<Button type="text plain">Cancel</Button>	
-						<Button type="information" classes="margin-left">Submit</Button>	
+						<Button classes="text plain">Cancel</Button>	
+						<Button classes="margin-left information">Submit</Button>	
 			    	</div>
 				</div>
 
@@ -60,8 +60,8 @@ class Forms extends Component {
 			    	<Select placeholder="a select" options={options} state="danger" message="danger message"/>
 
 			    	<div className="col-2 col-right">
-						<Button type="text plain">Cancel</Button>	
-						<Button type="information" classes="margin-left">Submit</Button>	
+						<Button classes="text plain">Cancel</Button>	
+						<Button classes="margin-left information">Submit</Button>	
 			    	</div>
 				</div>
 
