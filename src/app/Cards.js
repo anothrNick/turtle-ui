@@ -15,8 +15,8 @@ class Cards extends Component {
 						footer={
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
-									<Button type="plain text">Cancel</Button>	
-									<Button type="accent" classes="margin-left">Submit</Button>	
+									<Button classes="plain text">Cancel</Button>	
+									<Button classes="accent margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}>
@@ -29,8 +29,8 @@ class Cards extends Component {
 						footer={
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
-									<Button type="plain text">Cancel</Button>	
-									<Button type="accent" classes="margin-left">Submit</Button>	
+									<Button classes="plain text">Cancel</Button>	
+									<Button classes="accent margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}>
@@ -43,8 +43,8 @@ class Cards extends Component {
 						footer={
 							<div className="grid grid-2">
 						    	<div className="col-2 col-right">
-									<Button type="text">Cancel</Button>	
-									<Button type="accent" classes="margin-left">Submit</Button>	
+									<Button classes="text">Cancel</Button>	
+									<Button classes="accent margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}
@@ -59,8 +59,8 @@ class Cards extends Component {
 						footer={
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
-									<Button type="plain text">Cancel</Button>	
-									<Button type="information text plain" classes="margin-left">Submit</Button>	
+									<Button classes="plain text">Cancel</Button>	
+									<Button classes="information text plain margin-left">Submit</Button>	
 						    	</div>
 							</div>
 						}>
@@ -73,8 +73,8 @@ class Cards extends Component {
 						footer={
 							<div className="grid grid-2">
 							    	<div className="col-2 col-right">
-									<Button type="plain text">Cancel</Button>	
-									<Button type="brand plain" classes="margin-left">Login</Button>	
+									<Button classes="plain text">Cancel</Button>	
+									<Button classes="brand plain margin-left">Login</Button>	
 						    	</div>
 							</div>
 						}>

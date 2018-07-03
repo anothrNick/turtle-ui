@@ -16,6 +16,7 @@
 
 .select-span {
 	position: relative;
+	width: 100%;
 }
 .select-span .svg-inline--fa.fa-chevron-down {
 	position: absolute;

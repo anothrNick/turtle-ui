@@ -1,5 +1,5 @@
 .nav {
-	padding-bottom: 2px;
+	/* padding-bottom: 4px; */
 }
 
 .nav.underline {
@@ -28,15 +28,25 @@
 	text-align: left;
 }
 .nav.link-underline a {
-	padding-bottom: 4px;
+	padding-bottom: 6px;
 }
 .nav.underline a {
-	margin-bottom: -4px;
+	margin-bottom: -2px;
 }
 .nav.pull-right a {
 	margin-right: 0px;
 	margin-left: 25px;
 }
+
+.nav.vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav.vertical a {
+	padding: 5px 0px;
+}
+
 
 .nav a:hover {
 	color: var(--brand);

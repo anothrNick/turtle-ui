@@ -45,9 +45,9 @@ class Modals extends Component {
 				<h1>Modals</h1>
 
 				<div className="grid">
-					<Button type="success plain" classes="col-2" onClick={this.openOne}>Card Modal</Button>	
-					<Button type="information plain" classes="col-2" onClick={this.openTwo}>Text Modal</Button>	
-					<Button type="plain" classes="col-2" onClick={this.openThree}>Sidebar</Button>	
+					<Button classes="success plain col-2" onClick={this.openOne}>Card Modal</Button>	
+					<Button classes="information plain col-2" onClick={this.openTwo}>Text Modal</Button>	
+					<Button classes="plain col-2" onClick={this.openThree}>Sidebar</Button>	
 				</div>
 
 				<Modal
@@ -61,8 +61,8 @@ class Modals extends Component {
 							footer={
 								<div className="grid grid-2">
 							    	<div className="col-2 col-right">
-										<Button type="plain text" onClick={this.closeThree}>Cancel</Button>	
-										<Button type="information plain" classes="margin-left" onClick={this.closeThree}>Submit</Button>	
+										<Button classes="plain text" onClick={this.closeThree}>Cancel</Button>	
+										<Button classes="information plain margin-left" onClick={this.closeThree}>Submit</Button>	
 							    	</div>
 								</div>
 							}>
@@ -85,8 +85,8 @@ class Modals extends Component {
 									footer={
 										<div className="grid grid-2">
 									    	<div className="col-2 col-right">
-												<Button type="plain text" onClick={this.closeOne}>Cancel</Button>	
-												<Button type="information plain" classes="margin-left" onClick={this.closeOne}>Submit</Button>	
+												<Button classes="plain text" onClick={this.closeOne}>Cancel</Button>	
+												<Button classes="information plain margin-left" onClick={this.closeOne}>Submit</Button>	
 									    	</div>
 										</div>
 									}>
@@ -108,7 +108,7 @@ class Modals extends Component {
 								<p>Just some text, a button, and grid.</p>
 								<div className="grid grid-2">
 							    	<div className="col-2 col-right">
-										<Button type="plain text" onClick={this.closeTwo}>Close</Button>
+										<Button classes="plain text" onClick={this.closeTwo}>Close</Button>
 									</div>
 								</div>
 							</div>

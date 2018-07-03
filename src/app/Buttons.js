@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Button from '../components/Button';
 import Dropdown from '../components/Dropdown';
-import Nav from '../components/Nav';
 
 import List from '../components/List';
 import ListItem from '../components/ListItem';
@@ -14,12 +13,6 @@ import tasks from '@fortawesome/fontawesome-free-solid/faTasks';
 class Buttons extends Component {
 
 	render() {
-		const testLinks = [
-			{to: '/navs#one', text: 'Item One'},
-			{to: '/navs', text: 'Item Two'},
-			{to: '/navs#three', text: 'Item Three'},
-		];
-
 		return (
 			<div >
 				<h1>Buttons</h1>

@@ -23,8 +23,8 @@ class Card extends Component {
 					</NavLink>
 		}
 		else {
-			card = <div className={classes} onClick={this.props.onClick}>
-						<div className="card-content">{this.props.children}</div>
+			card = <div className={classes} onClick={this.props.onClick} id={this.props.id || ""}>
+						<div className="card-content" style={this.props.style || {}}>{this.props.children}</div>
 						{this.props.footer && 
 							<div className="card-footer">{this.props.footer}</div>					
 						}

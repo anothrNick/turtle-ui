@@ -39,7 +39,7 @@ class Navs extends Component {
 				<h2>Horizontal Nav - <small>no underline</small></h2>
 				<div className="grid grid-1">
 					<Nav 
-						classes="horizontal"
+						classes="horizontal "
 						links={testLinks}
 					/>
 					<Card state="alert" classes="center"><p className="text-muted">Content</p></Card>

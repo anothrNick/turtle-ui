@@ -16,8 +16,11 @@
 	cursor: pointer;
 }
 
-.modal>.card {
+.card.no-border {
 	border-width: 0px;
+}
+.card.no-padding>.card-content {
+	padding: 0px;
 }
 
 .card-content > h1, 
@@ -34,6 +37,9 @@
 	padding: 15px;
 }
 
+.card.no-content-padding-top > .card-content {
+	padding-top: 0px;
+}
 .card.no-content-padding > .card-content {
 	padding: 0px;
 }

@@ -4,43 +4,37 @@ import './Table.css';
 
 class Table extends Component {
 
-	constructor(props) {
-	    super(props);
-		this.state = {
-		  classes: props.classes ? props.classes : "",
-		  headers: props.headers ? props.headers : [],
-		  values: props.values ? props.values : []
-		}
+	onClick = () => {
 
 	}
 
 	render() {
-		const classes = ["table",this.state.classes,this.state.state].join(" ");
+		const classes = ["table", this.props.classes].join(" ");
 		return (
 			<table className={classes}>
-				{this.state.headers.length > 0 &&
+				{this.props.headers && this.props.headers.length > 0 &&
 					<thead>
 						<tr>
-						{this.state.headers.map(function(header){
+						{this.props.headers.map(function(header, index){
 							return (
-								<th>{header}</th>
+								<th key={"table_header_"+index}>{header}</th>
 							)
 						})}
 						</tr>
 					</thead>
 				}
 				<tbody>
-					{this.state.values.map(function(row){
+					{this.props.values.map(function(row, index){
 						return (
-							<tr>
-								{row.map(function(value){
+							<tr key={"table_body_"+index} onClick={() => (this.props.onClick ? this.props.onClick(index) : this.onClick)}>
+								{row.map(function(value, column){
 									return (
-										<td>{value}</td>
+										<td key={"table_body_row_"+index+"_"+column}>{value}</td>
 									)
 								})}
 							</tr>
 						)
-					})}
+					}, this)}
 				</tbody>
 			</table>
 		  );

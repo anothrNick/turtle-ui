@@ -23,15 +23,16 @@ class Select extends Component {
 	render() {
 		const classes = ["select",this.state.classes,this.state.state].join(" ");
 		const textClass = ["text-", this.state.state].join("");
+		const labelClass = ["", this.props.labelClasses].join("");
 		return (
-			<label>
+			<label className={labelClass}>
 				<span><strong>{this.state.label}</strong></span>
 				<div className="select-span">
-			    	<select className={classes} type={this.state.type}>
-	        			<option value="" disabled selected hidden>{this.state.placeholder}</option>
-	        			{this.state.options.map(function(option) {
+			    	<select className={classes} type={this.state.type} value={this.props.value} onChange={this.props.onChange}>
+	        			<option value="" disabled hidden>{this.state.placeholder}</option>
+	        			{this.state.options.map(function(option, i) {
 	        				return (
-	        					<option value={option.value} selected={this.props.value === option.value}>{option.text}</option>
+	        					<option key={option.value + i + "_select"} value={option.value} >{option.text}</option>
 	        				)
 	        			}, this)}
 			    	</select>
