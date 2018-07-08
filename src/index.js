@@ -9,7 +9,6 @@ import Nav from './Nav';
 import Select from './Select';
 import Table from './Table';
 import TextArea from './TextArea';
-import './Button.css';
 
 export {
     Button,
