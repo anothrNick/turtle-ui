@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Nav from '../components/Nav';
-import Card from '../components/Card';
+import {Nav, Card} from 'turtle-ui';
 
 
 class Navs extends Component {

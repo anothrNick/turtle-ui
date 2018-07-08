@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Table from '../components/Table';
+import {Table} from 'turtle-ui';
 
 class Tables extends Component {
 

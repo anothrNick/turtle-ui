@@ -1,24 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, Switch } from 'react-router-dom'
-import { Provider } from 'react-redux'; 
-import store from './store';
-import createHistory from 'history/createHashHistory';
-import Full from './containers/Full';
-import './base.css';
+import Button from './Button';
+import Card from './Card';
+import Dropdown from './Dropdown';
+import Input from './Input';
+import List from './List';
+import ListItem from './ListItem';
+import Modal from './Modal';
+import Nav from './Nav';
+import Select from './Select';
+import Table from './Table';
+import TextArea from './TextArea';
+import './Button.css';
 
-const history = createHistory();
-
-const App = () => (
-	<Router history={history}>
-		<Switch>
-			<Route path="/" component={Full} />
-		</Switch>
-	</Router>
-)
-
-ReactDOM.render((
-	<Provider store={store}>
-		<App />
-	</Provider>
-), document.getElementById('root'));
+export {
+    Button,
+    Card,
+    Dropdown,
+    Input,
+    List,
+    ListItem,
+    Modal,
+    Nav,
+    Select,
+    Table,
+    TextArea
+}

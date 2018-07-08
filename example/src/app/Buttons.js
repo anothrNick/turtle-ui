@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../components/Button';
-import Dropdown from '../components/Dropdown';
-
-import List from '../components/List';
-import ListItem from '../components/ListItem';
+import { Button, Dropdown, List, ListItem} from 'turtle-ui';
 
 import user from '@fortawesome/fontawesome-free-solid/faUser';
 import database from '@fortawesome/fontawesome-free-solid/faDatabase';

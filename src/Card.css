@@ -17,7 +17,7 @@
 }
 
 .card.no-border {
-	border-width: 0px;
+	border-width: 0px !important;
 }
 .card.no-padding>.card-content {
 	padding: 0px;

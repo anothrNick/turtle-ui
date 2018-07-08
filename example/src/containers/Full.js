@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faUser from '@fortawesome/fontawesome-free-solid/faUserCircle';
 import Footer from '../components/Footer';
-import Button from '../components/Button';
-import Nav from '../components/Nav';
-import Dropdown from '../components/Dropdown';
-import Card from '../components/Card';
-import Modal from '../components/Modal';
 import Logo from '../components/Logo';
+import { Button, Nav, Dropdown, Card, Modal, List, ListItem } from 'turtle-ui';
 
 import Typography from '../app/Typography';
 import Buttons from '../app/Buttons';
@@ -21,9 +16,7 @@ import Tables from '../app/Tables';
 import Lists from '../app/Lists';
 import Home from '../app/Home';
 
-import List from '../components/List';
-import ListItem from '../components/ListItem';
-
+import faUser from '@fortawesome/fontawesome-free-solid/faUserCircle';
 import user from '@fortawesome/fontawesome-free-solid/faUser';
 import database from '@fortawesome/fontawesome-free-solid/faDatabase';
 import siteMap from '@fortawesome/fontawesome-free-solid/faSitemap';

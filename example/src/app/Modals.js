@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Card from '../components/Card';
-import Button from '../components/Button';
-import Modal from '../components/Modal';
+import {Card, Button, Modal} from 'turtle-ui';
 
 class Modals extends Component {
 
@@ -57,7 +55,7 @@ class Modals extends Component {
 
 					<div className="grid grid-4 full-height">
 						<Card 
-							classes="col-1 footer-plain"
+							classes="col-1 footer-plain no-border"
 							footer={
 								<div className="grid grid-2">
 							    	<div className="col-2 col-right">
@@ -81,7 +79,7 @@ class Modals extends Component {
 						<div className="col-3-2">
 							<div className="grid grid-1">
 								<Card 
-									classes="footer-plain"
+									classes="footer-plain no-border"
 									footer={
 										<div className="grid grid-2">
 									    	<div className="col-2 col-right">
