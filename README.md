@@ -82,6 +82,15 @@ Now, anytime you make a change to your component in src/ or to the example app's
 * Convert styles to be CSS Modules
 * Document each component with sample code
 
+## Release Notes
+
+#### 1.2.0
+* Updated table styles to include a `condensed` class as well as a `footer` prop option
+* Updated table to support a `title` prop option to show above table headers
+* Added a pagination/filter demo to the example docs for tables
+** _NOTE: Pagination/Filtering is not a functional option of the `Table` component, but it is fairly simple to implement, as the example shows_
+* Added a `small` class to the `Input` component
+
 ## License
 
 MIT © [anothrNick](https://github.com/anothrNick)

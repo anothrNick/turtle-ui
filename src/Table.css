@@ -5,7 +5,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     outline: 0;
     border-spacing: 0;
     font-size: 100%;
-    /*vertical-align: top;*/
     background: transparent;
 }
 
@@ -25,6 +24,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	border-bottom: 2px solid var(--card-border-color);
 }
 
+.table>tfoot>tr {
+	background-color: #fafafa;
+}
+.table>tfoot>tr>td {
+	padding: 8px 15px;
+	border-top: 2px solid var(--card-border-color);
+}
+
 .table>tbody>tr>td {
 	text-align: left;
 	padding: 15px;
@@ -35,6 +42,15 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 .table.hover>tbody>tr:hover{
-	cursor: pointer;
+	cursor: default;
 	background-color: #fafafa;
+}
+
+.table.pointer>tbody>tr:hover{
+	cursor: pointer;
+}
+
+/* condensed */
+.table.condensed>tbody>tr>td {
+	padding: 8px 15px;
 }

@@ -8,6 +8,11 @@
 	font-family: inherit;
 	color: var(--text-color);
 }
+.input.small {
+	margin: 0px;
+	padding: 8px;
+    font-size: 14px;
+}
 
 .input.success {
 	border-color: var(--success);
