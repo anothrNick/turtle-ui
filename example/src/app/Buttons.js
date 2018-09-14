@@ -91,6 +91,19 @@ class Buttons extends Component {
 									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
 								</List>
 							</Dropdown>
+
+
+							<Dropdown 
+								width={300}
+								showIcon={true}
+								clickClose={false}
+								buttonText="No Click Close"
+								classes="col-1"
+								buttonClasses="plain">
+								<List>
+									<ListItem icon={user} title="Add User" description="Add a user for this demo"/>
+								</List>
+							</Dropdown>
 						</div>
 					</div>
 				</div>			

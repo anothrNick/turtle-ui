@@ -12,7 +12,8 @@ class Dropdown extends Component {
 	    super(props);
 		this.state = {
 		  isOpen: false,
-		  showIcon: this.props.showIcon === true
+		  showIcon: this.props.showIcon === true,
+		  clickClose: this.props.clickClose ? true: false
 		}   
 	}
 
@@ -31,7 +32,7 @@ class Dropdown extends Component {
     // close dropdown if clicked outside of component
     handleClickOutside = (event) => {
     	if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-			if (this.state.isOpen) this.setState({isOpen: false});
+			if (this.state.isOpen && this.state.clickClose) this.setState({isOpen: false});
         }
     }
 
