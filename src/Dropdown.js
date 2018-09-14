@@ -13,7 +13,7 @@ class Dropdown extends Component {
 		this.state = {
 		  isOpen: false,
 		  showIcon: this.props.showIcon === true,
-		  clickClose: this.props.clickClose ? true: false
+		  disableClickClose: this.props.disableClickClose
 		}   
 	}
 
@@ -32,7 +32,7 @@ class Dropdown extends Component {
     // close dropdown if clicked outside of component
     handleClickOutside = (event) => {
     	if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-			if (this.state.isOpen && this.state.clickClose) this.setState({isOpen: false});
+			if (this.state.isOpen && !this.state.disableClickClose) this.setState({isOpen: false});
         }
     }
 
@@ -51,13 +51,14 @@ class Dropdown extends Component {
 		const styles = {
 			"width": width + "px"
 		}
+		var itemsClick = this.props.disableClickClose ? function(){} : this.toggle;
 
 		return (
 			<div className={classes} ref={this.setWrapperRef}>
 				<Button classes={buttonClasses + " " + (this.props.type || "")} style={this.props.buttonStyle} onClick={this.toggle}>
 					{this.props.buttonText} {this.state.showIcon && <FontAwesomeIcon icon={icon} />}
 				</Button>
-				<div className={itemClasses} style={styles} onClick={this.toggle}>
+				<div className={itemClasses} style={styles} onClick={itemsClick}>
 					{this.props.children}
 				</div>
 			</div>

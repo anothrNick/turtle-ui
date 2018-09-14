@@ -96,7 +96,7 @@ class Buttons extends Component {
 							<Dropdown 
 								width={300}
 								showIcon={true}
-								clickClose={false}
+								disableClickClose={true}
 								buttonText="No Click Close"
 								classes="col-1"
 								buttonClasses="plain">
