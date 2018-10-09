@@ -15,7 +15,8 @@ class Select extends Component {
 		  message: props.message ? props.message : "",
 		  state: props.state ? props.state : "",
 		  classes: props.classes ? props.classes : "",
-		  options: props.options ? props.options : []
+		  options: props.options ? props.options : [],
+		  name: props.name ? props.name : ""
 		}
 
 	}
@@ -28,7 +29,7 @@ class Select extends Component {
 			<label className={labelClass}>
 				<span><strong>{this.state.label}</strong></span>
 				<div className="select-span">
-			    	<select className={classes} type={this.state.type} value={this.props.value} onChange={this.props.onChange}>
+			    	<select className={classes} name={this.state.name} type={this.state.type} value={this.props.value} onChange={this.props.onChange}>
 	        			<option value="" disabled hidden>{this.state.placeholder}</option>
 	        			{this.state.options.map(function(option, i) {
 	        				return (
