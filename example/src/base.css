@@ -194,6 +194,12 @@ div[class^="col-"]{
 .col-4-2 {
 	grid-column: span 2/4;
 }
+.col-2-5 {
+	grid-column: span 2/5;
+}
+.col-3-5 {
+	grid-column: span 3/5;
+}
 .col-5 {
 	grid-column: span 5;
 }

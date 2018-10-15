@@ -71,12 +71,11 @@ Now, anytime you make a change to your component in src/ or to the example app's
 * Modals
 * Navs
 
-#### Styles
-* Grid
-* Typography
-* Utility
-
 ## TODO
+* Put the "styles" in place that's accessible, these would currently need to be copied from the example `base.css` file
+** Grid
+** Typography
+** Utility
 * Responsiveness
 * Don't use props as initial state
 * Convert styles to be CSS Modules
@@ -90,6 +89,12 @@ Now, anytime you make a change to your component in src/ or to the example app's
 * Added a pagination/filter demo to the example docs for tables
 ** _NOTE: Pagination/Filtering is not a functional option of the `Table` component, but it is fairly simple to implement, as the example shows_
 * Added a `small` class to the `Input` component
+
+### 1.3.0
+* Add styles to slide modal in from right
+** Updated modal styles to be position `fixed`, be sure to set `--root-overflow: hidden` when showing (so the background content does not scroll)
+* Fix nav underline margin
+* Add `Switch` (checkbox)
 
 ## License
 

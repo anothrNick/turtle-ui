@@ -9,7 +9,8 @@ class Modals extends Component {
 		this.state = {
 			openModalOne: false,
 			openModalTwo: false,
-			openModalThree: false
+			openModalThree: false,
+			openModalFour: false
 		}
 	}
 
@@ -18,7 +19,7 @@ class Modals extends Component {
 	}
 
 	closeOne = () => {
-		this.setState({openModalOne: false})
+		this.setState({openModalOne: false});
 	}
 
 	openTwo = () => {
@@ -26,7 +27,7 @@ class Modals extends Component {
 	}
 
 	closeTwo = () => {
-		this.setState({openModalTwo: false})
+		this.setState({openModalTwo: false});
 	}
 
 	openThree = () => {
@@ -34,7 +35,15 @@ class Modals extends Component {
 	}
 
 	closeThree = () => {
-		this.setState({openModalThree: false})
+		this.setState({openModalThree: false});
+	}
+
+	openFour = () => {
+		this.setState({openModalFour: true});
+	}
+
+	closeFour = () => {
+		this.setState({openModalFour: false});
 	}
 
 	render() {
@@ -46,7 +55,35 @@ class Modals extends Component {
 					<Button classes="success plain col-2" onClick={this.openOne}>Card Modal</Button>	
 					<Button classes="information plain col-2" onClick={this.openTwo}>Text Modal</Button>	
 					<Button classes="plain col-2" onClick={this.openThree}>Sidebar</Button>	
+					<Button classes="information plain col-2" onClick={this.openFour}>From Right</Button>	
 				</div>
+
+				<Modal
+					classes="from-right"
+					close={this.closeFour}
+					isOpen={this.state.openModalFour}>
+
+					<div className="full-height grid grid-4">
+						<div className="col-2-5">
+							<div className="grid grid-1">
+								<Card 
+									classes="footer-plain no-border"
+									footer={
+										<div className="grid grid-2">
+											<div className="col-2 col-right">
+												<Button classes="plain text" onClick={this.closeFour}>Cancel</Button>	
+												<Button classes="information plain margin-left" onClick={this.closeFour}>Submit</Button>	
+											</div>
+										</div>
+									}>
+									<h2>Sidebar Header</h2>
+									<p>Modal as sidebar</p>
+									<p>Example of a card used as the modal body, sliding in and out from the right.</p>
+								</Card>
+							</div>
+						</div>
+					</div>
+				</Modal>
 
 				<Modal
 					classes="from-left"

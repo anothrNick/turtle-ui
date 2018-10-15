@@ -9,6 +9,7 @@ import Nav from './Nav';
 import Select from './Select';
 import Table from './Table';
 import TextArea from './TextArea';
+import Switch from './Switch';
 
 export {
     Button,
@@ -21,5 +22,6 @@ export {
     Nav,
     Select,
     Table,
-    TextArea
+    TextArea,
+    Switch
 }

@@ -1,7 +1,27 @@
 import React, { Component } from 'react';
-import {Input, Select, TextArea, Button} from 'turtle-ui';
+import {Input, Select, TextArea, Button, Switch} from 'turtle-ui';
 
 class Forms extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			checkOne: false,
+			checkTwo: true
+		};
+	}
+
+	toggleSwitch = (event) => {
+	    const target = event.target;
+	    const value = target.type === 'checkbox' ? target.checked : target.value;
+		const name = target.name;
+		
+		var checkValue = this.state[name];
+
+		this.setState({
+			[name]: !checkValue
+		});
+	}
 
 	render() {
 		const options = [{value: "1", text: "one"},{value: "2", text: "two"}]
@@ -19,8 +39,12 @@ class Forms extends Component {
 			    			<TextArea placeholder="a text area" />
 			    		</div>
 			    	</div>
-				</div>
 
+					<div></div>
+					<Switch label="Switch" name="checkOne" on={this.state.checkOne} onChange={this.toggleSwitch}/>
+					<Switch label="Switch" name="checkTwo" on={this.state.checkTwo} onChange={this.toggleSwitch}/>
+				</div>
+				<br/>
 				<div className="grid grid-3 margin-top-more">
 			    	<Input placeholder="a text input" label="Label" value="test value"/>
 			    	<Select placeholder="a select" label="Label" options={options} value="1"/>
