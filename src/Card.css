@@ -123,3 +123,7 @@
 .card.footer-plain .card-footer {
 	background-color: #FFF;
 }
+
+.modal .card{
+	border-radius: 0px;
+}
