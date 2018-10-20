@@ -13,7 +13,6 @@ class TextArea extends Component {
 		  state: props.state ? props.state : "",
 		  classes: props.classes ? props.classes : "",
 		  rows: props.rows ? props.rows : 4,
-		  value: props.value ? props.value : "",
 		  onChange: props.onChange ? props.onChange : this.onChange,
 		  name: props.name ? props.name : ""
 		}
@@ -34,7 +33,7 @@ class TextArea extends Component {
 					name={this.state.name} 
 					placeholder={this.state.placeholder} 
 					rows={this.state.rows} 
-					value={this.state.value} 
+					value={this.props.value} 
 					onChange={this.state.onChange} />
 		    	<span className={textClass}>{this.state.message}</span>
 		 	</label>
