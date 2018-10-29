@@ -26,7 +26,7 @@ class Switch extends Component {
 		return (
             <label className={labelClass} >
                 <input type="checkbox" className={classes} name={this.props.name} checked={on} onChange={this.props.onChange}/>
-                <span class={"slider " + shape}></span>
+                <span className={"slider " + shape}></span>
                 <span className={textClass}>{this.state.message}</span>
             </label>
 		  );
