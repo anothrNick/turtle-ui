@@ -50,11 +50,22 @@ class Forms extends Component {
 			    	<Select placeholder="a select" label="Label" options={options} value="1"/>
 			    	<div className="col-2">
 			    		<div className="grid grid-1">
-			    			<TextArea placeholder="a text area" label="Label" value="test value"/>
+			    			<TextArea placeholder="a text area" description={<div className="muted">description of this field, maybe with a help link</div>} label="Label" value="test value"/>
 			    		</div>
 			    	</div>
 				</div>
 
+				<br/>
+				<h2>Description</h2>
+				<div className="grid grid-2">
+			    	<Input placeholder="a text input" label="Field One" description={<div className="muted">description of this field, maybe with a help link</div>} />
+			    	<Select placeholder="a select" label="Field Two" options={options} description={<div className="muted">description of this field, maybe with a help link</div>} />
+
+			    	<div className="col-2 col-right">
+						<Button classes="text plain">Cancel</Button>	
+						<Button classes="margin-left information">Submit</Button>	
+			    	</div>
+				</div>
 
 				<br/>
 				<h2>Message</h2>

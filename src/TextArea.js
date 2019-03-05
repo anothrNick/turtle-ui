@@ -28,6 +28,7 @@ class TextArea extends Component {
 		return (
 			<label>
 				<span><strong>{this.state.label}</strong></span>
+				{this.props.description}
 				<textarea 
 					className={classes} 
 					name={this.state.name} 

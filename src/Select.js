@@ -28,6 +28,7 @@ class Select extends Component {
 		return (
 			<label className={labelClass}>
 				<span><strong>{this.state.label}</strong></span>
+				{this.props.description}
 				<div className="select-span">
 			    	<select className={classes} name={this.state.name} type={this.state.type} value={this.props.value} onChange={this.props.onChange}>
 	        			<option value="" disabled hidden>{this.state.placeholder}</option>

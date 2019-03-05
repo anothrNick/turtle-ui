@@ -10,7 +10,6 @@ class Input extends Component {
 		  placeholder: props.placeholder ? props.placeholder : "placeholder",
 		  type: props.type ? props.type : "text",
 		  label: props.label ? props.label : "",
-		  message: props.message ? props.message : "",
 		  state: props.state ? props.state : "",
 		  labelClasses: props.labelClasses ? props.labelClasses : "",
 		  classes: props.classes ? props.classes : ""
@@ -25,8 +24,9 @@ class Input extends Component {
 		return (
 			<label className={labelClass} >
 				<span><strong>{this.state.label}</strong></span>
+				{this.props.description}
 		    	<input className={classes} name={this.props.name} placeholder={this.state.placeholder} type={this.state.type} value={this.props.value} onChange={this.props.onChange}/>
-		    	<span className={textClass}>{this.state.message}</span>
+		    	<span className={textClass}>{this.props.message}</span>
 		 	</label>
 		  );
 	}

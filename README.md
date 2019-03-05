@@ -83,6 +83,16 @@ Now, anytime you make a change to your component in src/ or to the example app's
 
 ## Release Notes
 
+### 1.3.3
+* Update modal backdrop color
+* Add description prop to input, select, textarea.
+
+### 1.3.0
+* Add styles to slide modal in from right
+  * Updated modal styles to be position `fixed`, be sure to set `--root-overflow: hidden` when showing (so the background content does not scroll)
+* Fix nav underline margin
+* Add `Switch` (checkbox)
+
 #### 1.2.0
 * Updated table styles to include a `condensed` class as well as a `footer` prop option
 * Updated table to support a `title` prop option to show above table headers
@@ -90,11 +100,6 @@ Now, anytime you make a change to your component in src/ or to the example app's
   * _NOTE: Pagination/Filtering is not a functional option of the `Table` component, but it is fairly simple to implement, as the example shows_
 * Added a `small` class to the `Input` component
 
-### 1.3.0
-* Add styles to slide modal in from right
-  * Updated modal styles to be position `fixed`, be sure to set `--root-overflow: hidden` when showing (so the background content does not scroll)
-* Fix nav underline margin
-* Add `Switch` (checkbox)
 
 ## License
 

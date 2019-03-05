@@ -73,6 +73,10 @@ a {
 }
 
 /* UTILITY */
+.muted {
+	color: var(--text-muted);
+}
+
 .vertical-align {
 	display: flex;
     align-items: center;
