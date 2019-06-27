@@ -25,7 +25,16 @@ class Input extends Component {
 			<label className={labelClass} >
 				<span><strong>{this.state.label}</strong></span>
 				{this.props.description}
-		    	<input className={classes} name={this.props.name} placeholder={this.state.placeholder} type={this.state.type} value={this.props.value} onChange={this.props.onChange}/>
+					<input 
+						className={classes} 
+						name={this.props.name} 
+						placeholder={this.state.placeholder} 
+						type={this.state.type} 
+						value={this.props.value} 
+						onChange={this.props.onChange}
+						data-key={this.props["data-key"]}
+						data-value={this.props["data-value"]}
+						/>
 		    	<span className={textClass}>{this.props.message}</span>
 		 	</label>
 		  );

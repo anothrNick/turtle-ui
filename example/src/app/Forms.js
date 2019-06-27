@@ -31,7 +31,7 @@ class Forms extends Component {
 				<h1>Forms</h1>
 
 				<div className="grid grid-3">
-			    	<Input placeholder="a text input" />
+			    	<Input placeholder="a text input" data-key="test-key" data-value="test-value"/>
 			    	<Select placeholder="a select" options={options}/>
 
 			    	<div className="col-2">

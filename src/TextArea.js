@@ -35,7 +35,10 @@ class TextArea extends Component {
 					placeholder={this.state.placeholder} 
 					rows={this.state.rows} 
 					value={this.props.value} 
-					onChange={this.state.onChange} />
+					onChange={this.state.onChange}
+					data-key={this.props["data-key"]}
+					data-value={this.props["data-value"]}
+					/>
 		    	<span className={textClass}>{this.state.message}</span>
 		 	</label>
 		  );
