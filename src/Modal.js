@@ -13,8 +13,9 @@ class Modal extends Component {
 	}
 
 	render() {
-  		var show = this.props.isOpen ? "show" : "";
-		const modalClasses = ["modal center", this.state.classes, show].join(" ");
+		var show = this.props.isOpen ? "show" : "";
+		var classes = this.props.overrideClasses ? "modal" : "modal center";
+		const modalClasses = [classes, this.state.classes, show].join(" ");
 		const backdropClasses = ["backdrop", show].join(" ");
 		return (
 			<div>

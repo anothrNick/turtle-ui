@@ -25,7 +25,14 @@ class Switch extends Component {
         var on = this.props.on ? this.props.on : false;
 		return (
             <label className={labelClass} >
-                <input type="checkbox" className={classes} name={this.props.name} checked={on} onChange={this.props.onChange}/>
+				<input 
+					type="checkbox" 
+					className={classes} 
+					name={this.props.name} 
+					checked={on} 
+					onChange={this.props.onChange}
+					data-key={this.props["data-key"]}
+					data-value={this.props["data-value"]}/>
                 <span className={"slider " + shape}></span>
                 <span className={textClass}>{this.state.message}</span>
             </label>
