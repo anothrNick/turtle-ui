@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-node@v1
     - name: Publish new version to npm
       run: |
+         echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
          npm version --no-git-tag-version $NEW_VERSION
          npm install
          npm publish
