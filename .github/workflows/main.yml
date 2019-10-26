@@ -18,6 +18,7 @@ jobs:
     - name: Publish new version to npm
       run: |
          npm version --no-git-tag-version $NEW_VERSION
+         npm install
          npm publish
       env:
          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
