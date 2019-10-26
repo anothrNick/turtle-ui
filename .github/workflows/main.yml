@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-node@v1
     - name: Publish new version to npm
       run: |
-         npm version $NEW_VERSION
+         npm version --no-git-tag-version $NEW_VERSION
          npm publish
       env:
          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
