@@ -40,7 +40,7 @@ class Select extends Component {
 							data-value={this.props["data-value"]}
 							>
 	        			<option value="" disabled hidden>{this.state.placeholder}</option>
-	        			{this.state.options.map(function(option, i) {
+	        			{this.props.options.map(function(option, i) {
 	        				return (
 	        					<option key={option.value + i + "_select"} value={option.value} >{option.text}</option>
 	        				)
