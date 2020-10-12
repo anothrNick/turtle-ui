@@ -1,117 +1,117 @@
 .button.btn-small {
-	padding: 5px 10px;
-	font-size: 14px;
+  padding: 5px 10px;
+  font-size: 14px;
 }
 
 .button {
-	padding: 10px 20px;
-	color: var(--text-muted);
-	background-color: var(--content-background);
-	border: 2px solid var(--content-background);
-	border-radius: 2px;
-	cursor: pointer;
-    align-items: initial;
-    font: 16px 'Roboto';
-    font-weight: normal;
-	display: flex;
-    justify-content: center;
-    position: relative;
+  padding: 10px 20px;
+  color: var(--text-muted);
+  background-color: var(--content-background);
+  border: 2px solid var(--content-background);
+  border-radius: 2px;
+  cursor: pointer;
+  align-items: initial;
+  font: 16px "Roboto";
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .button:before {
-	content: '';
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	left:0;
-	top:0;
-	background: transparent;
-	transition: background .3s;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  transition: background 0.3s;
 }
 .button:hover:before {
-	background: rgba(255, 255, 255, .05);
+  background: rgba(255, 255, 255, 0.05);
 }
 .button:active:before {
-	background: rgba(0, 0, 0, .05);
+  background: rgba(0, 0, 0, 0.05);
 }
 .button:focus {
-	outline: none;
+  outline: none;
 }
 
 .button.no-click:before {
-	display: none;
+  display: none;
 }
 
 .button.brand {
-	background-color: var(--brand);
-	border-color: var(--brand);
-	color: #FFF;
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
 }
 
 .button.accent {
-	background-color: var(--accent);
-	border-color: var(--accent);
-	color: #FFF;
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
 .button.success {
-	background-color: var(--success);
-	border-color: var(--success);
-	color: #FFF;
+  background-color: var(--success);
+  border-color: var(--success);
+  color: #fff;
 }
 
 .button.information {
-	background-color: var(--information);
-	border-color: var(--information);
-	color: #FFF;
+  background-color: var(--information);
+  border-color: var(--information);
+  color: #fff;
 }
 
 .button.warning {
-	background-color: var(--warning);
-	border-color: var(--warning);
-	color: #FFF;
+  background-color: var(--warning);
+  border-color: var(--warning);
+  color: #fff;
 }
 
 .button.danger {
-	background-color: var(--danger);
-	border-color: var(--danger);
-	color: #FFF;
+  background-color: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
 }
 
 .plain {
-	background-color: #FFF;
+  background-color: #fff;
 }
 
 .button.brand.plain {
-	color: var(--brand);
-	background-color: #FFF;
+  color: var(--brand);
+  background-color: #fff;
 }
 
 .button.accent.plain {
-	color: var(--accent);
-	background-color: #FFF;
+  color: var(--accent);
+  background-color: #fff;
 }
 
 .button.success.plain {
-	color: var(--success);
-	background-color: #FFF;
+  color: var(--success);
+  background-color: #fff;
 }
 
 .button.information.plain {
-	color: var(--information);
-	background-color: #FFF;
+  color: var(--information);
+  background-color: #fff;
 }
 
 .button.warning.plain {
-	color: var(--warning);
-	background-color: #FFF;
+  color: var(--warning);
+  background-color: #fff;
 }
 
 .button.danger.plain {
-	color: var(--danger);
-	background-color: #FFF;
+  color: var(--danger);
+  background-color: #fff;
 }
 
 .button.text {
-	border: none;
-	background-color: transparent;
+  border-color: transparent;
+  background-color: transparent;
 }
